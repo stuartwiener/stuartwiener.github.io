@@ -1,25 +1,17 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2016-07-27 10:15:46 +0200
-categories: jekyll update
+title:  "Meeting people where they are at"
+date:   2015-03-22 10:15:46 +0200
+categories: strategy
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+We’ve been saying this thing around the office quite a bit recently: “Meet your client where they are at.”
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+It’s simple really, just suspend your beliefs for half a moment and try to empathise with someone else’s point of view. But it’s remarkably hard. As a consultant it’s easy to think that we have the answers—we’re often just expected to—but it’s always dangerous to assume that we know the answer before we’ve really understood what’s going on.
 
-Jekyll also offers powerful support for code snippets:
+> The understanding, ‘What I know is different from what you know’ is essential for effective communication.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+<cite>Kenneth Savitsky</cite>
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Listening to people isn’t just about convincing them of an alternative point of view—it’s the only way that they will ever come to own the new information for themselves and that is what ultimately leads to impact. And the only we way may discover that we are wrong (*gasp*), is if we embrace the possibility of another point of view.
 
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">There&#39;s nothing more fatal to wisdom and good relationships than rejecting certain ideas or certain people out of hand.</p>&mdash; Timothy Keller (@timkellernyc) <a href="https://twitter.com/timkellernyc/status/710940099647770625">March 18, 2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
