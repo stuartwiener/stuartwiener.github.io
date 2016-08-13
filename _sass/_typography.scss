@@ -22,11 +22,13 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1em;
+  letter-spacing: 0.03em;
   margin: $spacing-unit 0;
 }
 .site-header {
   h1,h2 {
     text-transform: none;
+    letter-spacing: 0;
   }
 }
 a {
@@ -67,15 +69,18 @@ ol {
 }
 blockquote {
   margin: $spacing-unit 0;
-  padding: 0;
+  padding: 0 0 0 $spacing-unit/2;
+  border-left: $spacing-unit/3 solid $grey-color;
 }
 cite {
-  font-style: oblique;
+  font-family: serif;
+  font-style: italic;;
 }
 cite::before {
   content: '—'
 }
 em {
+  font-family: serif;
   font-style: italic;
 }
 strong {
@@ -93,7 +98,7 @@ img {
   height: auto;
 }
 pre, code, kbd {
-  font-family: $base-font-family;
+  font-family: monospace;
   background: $grey-color;
   margin: $spacing-unit 0;
   padding: 0;

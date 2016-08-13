@@ -4,16 +4,16 @@
 @charset "utf-8";
 
 // Load up the font.
-@font-face {
-    font-family: 'Lab Mono';
-    src: url( '../fonts/labmono-regular-web.eot' );
-    src: url( '../fonts/labmono-regular-web.eot?#iefix' ) format( 'embedded-opentype' ),
-         url( '../fonts/labmono-regular-web.woff2' ) format( 'woff2' ),
-         url( '../fonts/labmono-regular-web.woff' ) format( 'woff' ),
-         url( '../fonts/labmono-regular-web.ttf' ) format( 'truetype' );
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Lab Mono';
+//     src: url( '../fonts/labmono-regular-web.eot' );
+//     src: url( '../fonts/labmono-regular-web.eot?#iefix' ) format( 'embedded-opentype' ),
+//          url( '../fonts/labmono-regular-web.woff2' ) format( 'woff2' ),
+//          url( '../fonts/labmono-regular-web.woff' ) format( 'woff' ),
+//          url( '../fonts/labmono-regular-web.ttf' ) format( 'truetype' );
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
 // Load up the icon font.
 @font-face {
@@ -51,8 +51,8 @@
 }
 
 // Our variables
-$base-font-family: "Lab Mono", sans-serif;
-$base-font-size:   1.125em;
+$base-font-family: "Source Serif Pro", sans-serif;
+$base-font-size:   1.25em;
 $base-font-weight: 400;
 $base-line-height: 1.6667;
 $small-font-size: 0.777em;
@@ -67,7 +67,7 @@ $brand-color:      #f1cb80;
 $other-color:      #f1b680;
 
 $primary-width:    56em;
-$content-width:    40em;
+$content-width:    38em;
 
 
 
