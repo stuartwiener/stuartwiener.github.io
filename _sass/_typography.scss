@@ -1,0 +1,111 @@
+/**
+ * Basic styling
+ */
+html {
+    font: $base-font-weight 1em/#{$base-line-height} $base-font-family;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
+@media screen and (min-width:40em) {
+  html {
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  }
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  margin: $spacing-unit 0;
+}
+.site-header {
+  h1,h2 {
+    text-transform: none;
+  }
+}
+a {
+  text-decoration: none;
+  color: $text-color;
+  border-bottom: 2px solid $text-color;
+  background: $background-color;
+  transition: all 0.1s ease-out;
+  background: -moz-linear-gradient(top, transparent 0%, transparent 65%, $brand-color 66%, $brand-color 100%);
+  background: -webkit-linear-gradient(top, transparent 0%, transparent 65%, $brand-color 66%,$brand-color 100%);
+  background: linear-gradient(to bottom, transparent 0%, transparent 65%, $brand-color 66%,$brand-color 100%);
+  background-size: 0 100%;
+}
+a:hover {
+  background-size: 100% 100%;
+}
+.plain-link {
+  border-bottom: none;
+  color: $brand-color;
+}
+.plain-link:hover {
+  background: none;
+  color: $other-color;
+}
+p {
+  margin: $spacing-unit 0;
+  padding: 0;
+}
+ul {
+  margin: $spacing-unit 0;
+  padding: 0 0 0 $spacing-unit*1.5;
+  list-style: disc;
+}
+ol {
+  margin: $spacing-unit 0;
+  padding: 0 0 0 $spacing-unit*1.5;
+  list-style: decimal;
+}
+blockquote {
+  margin: $spacing-unit 0;
+  padding: 0;
+}
+cite {
+  font-style: oblique;
+}
+cite::before {
+  content: '—'
+}
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: $base-font-weight;
+}
+figure {
+  margin: $spacing-unit 0;
+  padding: 0;
+}
+figcaption {
+  font-size: $small-font-size;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+pre, code, kbd {
+  font-family: $base-font-family;
+  background: $grey-color;
+  margin: $spacing-unit 0;
+  padding: 0;
+}
+pre {
+  max-width: 100%;
+  padding: $spacing-unit;
+  overflow-x: auto;
+}
+.post-meta {
+  font-size: $small-font-size;
+}
+.site-footer-main {
+
+}

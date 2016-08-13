@@ -7,7 +7,7 @@ categories: update
 
 Social media is breeding a culture of shallow thinking. Consider your Facebook feed: do you see more long form journalism than you do cat videos? Or wedding pictures? Or baby pictures? Maybe it’s just my friends. Or Facebook’s algorithm. Either way I get a lot more of the latter, and that doesn’t lead to critical, original and contrarian thinking.
 
-In his book Thinking Fast and Slow, Daniel Kahneman explains that we, as human beings, have two distinct and entirely different modes of thinking. In one case we intuitively react to information in front of us, but in the other case we consciously deliberate to thoughtfully process that information. We switch between these two modes of thinking as required even though they are fundamentally different, most notably because the former is substantially less taxing on our energy than the latter.
+In his book *Thinking Fast and Slow*, Daniel Kahneman explains that we, as human beings, have two distinct and entirely different modes of thinking. In one case we intuitively react to information in front of us, but in the other case we consciously deliberate to thoughtfully process that information. We switch between these two modes of thinking as required even though they are fundamentally different, most notably because the former is substantially less taxing on our energy than the latter.
 
 It is often said that to write or to read is to think—which can be true—but thinking is more fundamental than any of the forms that it may take (conversing, reading, writing, looking out the window etc), and therefore that statement is not necessarily true.
 

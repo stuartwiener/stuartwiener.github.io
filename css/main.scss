@@ -3,30 +3,71 @@
 ---
 @charset "utf-8";
 
+// Load up the font.
+@font-face {
+    font-family: 'Lab Mono';
+    src: url( '../fonts/labmono-regular-web.eot' );
+    src: url( '../fonts/labmono-regular-web.eot?#iefix' ) format( 'embedded-opentype' ),
+         url( '../fonts/labmono-regular-web.woff2' ) format( 'woff2' ),
+         url( '../fonts/labmono-regular-web.woff' ) format( 'woff' ),
+         url( '../fonts/labmono-regular-web.ttf' ) format( 'truetype' );
+    font-weight: normal;
+    font-style: normal;
+}
 
+// Load up the icon font.
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?yxr5hj');
+  src:  url('../fonts/icomoon.eot?yxr5hj#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?yxr5hj') format('truetype'),
+    url('../fonts/icomoon.woff?yxr5hj') format('woff'),
+    url('../fonts/icomoon.svg?yxr5hj#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+  content: "\e900";
+  font-size: 0.87em;
+}
+.icon-twitter:before {
+  content: "\e901";
+}
 
 // Our variables
-$base-font-family: 'Fira Mono', monospace;
-$base-font-size:   18px;
+$base-font-family: "Lab Mono", sans-serif;
+$base-font-size:   1.125em;
 $base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.8;
+$base-line-height: 1.6667;
+$small-font-size: 0.777em;
+$large-font-size: 1.333em;
 
-$spacing-unit:     30px;
+$spacing-unit:     1.6em;
 
-$text-color:       #ccc;
-$background-color: #0a0a0a;
-$brand-color:      #2a7ae2;
+$text-color:       #1A1A1A;
+$grey-color:       #E7E7E7;
+$background-color: #F3F3F5;
+$brand-color:      #f1cb80;
+$other-color:      #f1b680;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
+$primary-width:    56em;
+$content-width:    40em;
 
 
 
@@ -44,10 +85,9 @@ $on-laptop:        800px;
 }
 
 
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "syntax-highlighting"
+  "normalize",
+  "typography",
+  "layout"
 ;
