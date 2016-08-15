@@ -18,6 +18,7 @@ html {
   }
 }
 h1, h2, h3, h4, h5, h6 {
+  font-family: $other-font-family;
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
@@ -69,22 +70,23 @@ ol {
 }
 blockquote {
   margin: $spacing-unit 0;
-  padding: 0 0 0 $spacing-unit/2;
-  border-left: $spacing-unit/3 solid $grey-color;
+  padding: 1px $spacing-unit;
+  background: $grey-color;
 }
 cite {
-  font-family: serif;
-  font-style: italic;;
+  font-family: $other-font-family;
+  font-style: normal;
 }
 cite::before {
   content: '—'
 }
 em {
-  font-family: serif;
+  font-family: $other-font-family;
+  font-weight: 400;
   font-style: italic;
 }
 strong {
-  font-weight: $base-font-weight;
+  font-weight: 700;
 }
 figure {
   margin: $spacing-unit 0;
@@ -111,6 +113,7 @@ pre {
 .post-meta {
   font-size: $small-font-size;
 }
-.site-footer-main {
-
+.site-footer-final {
+  font-family: $other-font-family;
+  font-size: $small-font-size;
 }
