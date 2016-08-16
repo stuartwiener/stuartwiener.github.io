@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Meeting people where they are at"
-date:   2015-03-22 10:15:46 +0200
+title: "Meeting people where they are at"
+date: 2015-03-22 10:15:46 +0200
 categories: strategy
 ---
 We’ve been saying this thing around the office quite a bit recently: “Meet your client where they are at.”

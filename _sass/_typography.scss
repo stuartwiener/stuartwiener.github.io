@@ -17,19 +17,57 @@ html {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   }
 }
+::-moz-selection {
+    color: $text-color;
+    background: $brand-color;
+}
+
+::selection {
+  color: $text-color;
+  background: $brand-color;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: $other-font-family;
   font-weight: 400;
   text-decoration: none;
-  text-transform: uppercase;
   font-size: 1em;
-  letter-spacing: 0.03em;
   margin: $spacing-unit 0;
+}
+h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+h3 {
+
+}
+h4 {
+
+}
+h5 {
+
+}
+h6 {
+
 }
 .site-header {
   h1,h2 {
+    font-family: $base-font-family;
     text-transform: none;
     letter-spacing: 0;
+    font-weight: 400;
+  }
+  a.plain-link {
+    vertical-align: middle;
+  }
+}
+.post-list {
+  h2 {
+    font-weight: 700;
   }
 }
 a {
@@ -91,11 +129,17 @@ strong {
 figure {
   margin: $spacing-unit 0;
   padding: 0;
+  max-width: 100%;
+  height: auto;
 }
 figcaption {
   font-size: $small-font-size;
 }
 img {
+  max-width: 100%;
+  height: auto;
+}
+iframe {
   max-width: 100%;
   height: auto;
 }
