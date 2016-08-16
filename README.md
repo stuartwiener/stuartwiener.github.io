@@ -1,1 +1,3 @@
-# stuartwiener.github.io
+# stuartwiener.com
+
+Jekyll site for stuartwiener.com
