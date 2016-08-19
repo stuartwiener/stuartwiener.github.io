@@ -1,5 +1,6 @@
 // Header
 .site-header {
+  background: $light-color;
   .wrapper {
     padding-top: $spacing-unit;
     max-width: $primary-width;
@@ -14,14 +15,6 @@
       * {
         display: inline;
       }
-    }
-  }
-}
-.home {
-  .wrapper {
-    padding-top: 50vh;
-    .site-heading {
-      min-height: 50vh;
     }
   }
 }
