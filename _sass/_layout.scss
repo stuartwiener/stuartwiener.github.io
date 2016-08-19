@@ -2,7 +2,8 @@
 .site-header {
   background: $light-color;
   .wrapper {
-    padding-top: $spacing-unit;
+    box-sizing: border-box;
+    padding: $spacing-unit;
     max-width: $primary-width;
     margin: 0 auto;
 
@@ -10,7 +11,7 @@
       max-width: $content-width;
       margin: 0;
       box-sizing: border-box;
-      padding: $spacing-unit;
+      padding: $spacing-unit 0;
 
       * {
         display: inline;
@@ -46,7 +47,9 @@
 }
 
 // Other
-
+.wrapper .home {
+  padding: $spacing-unit 0;
+}
 .post-list {
   padding: 0;
   list-style: none;
