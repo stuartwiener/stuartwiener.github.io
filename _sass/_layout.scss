@@ -48,15 +48,27 @@
 // Other
 .wrapper .home {
   padding: $spacing-unit 0;
+  .icon-arrow {
+    display: inline-block;
+    padding: 0 6px;
+  }
 }
 .post-list {
   padding: 0;
-  list-style: none;
+  list-style: disc;
   display: inline;
   li {
     display: inline;
-    * {
+    h2, span {
       display: inline;
+    }
+    &:after {
+      content: '•';
+      display: inline-block;
+      padding: 0 6px;
+      position: relative;
+      top: 2px;
+
     }
   }
 }
