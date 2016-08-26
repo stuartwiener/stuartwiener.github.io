@@ -1,9 +1,8 @@
 // Header
 .site-header {
   background: $light-color;
+
   .wrapper {
-    box-sizing: border-box;
-    padding: $spacing-unit;
     max-width: $primary-width;
     margin: 0 auto;
 
@@ -11,7 +10,7 @@
       max-width: $content-width;
       margin: 0;
       box-sizing: border-box;
-      padding: $spacing-unit 0;
+      padding: $spacing-unit*2 $spacing-unit;
 
       * {
         display: inline;
