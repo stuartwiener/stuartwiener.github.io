@@ -77,9 +77,9 @@ a {
   border-bottom: 2px solid $text-color;
   transition: background-size 0.15s ease-out;
   background: $brand-color;
-  background: -moz-linear-gradient(180deg, transparent 65%, $brand-color 66%);
-  background: -webkit-linear-gradient(180deg, transparent 65%, $brand-color 66%);
-  background: linear-gradient(180deg, transparent 65%, $brand-color 66%);
+  background: -moz-linear-gradient(180deg, transparent 70%, $brand-color 71%);
+  background: -webkit-linear-gradient(180deg, transparent 70%, $brand-color 71%);
+  background: linear-gradient(180deg, transparent 70%, $brand-color 71%);
   background-repeat: no-repeat;
   background-size: 0 100%;
 }
