@@ -9,7 +9,7 @@ In this talk about creativity, John Cleese expounds on the fact that part of hum
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5xPvvPTQaMI" frameborder="0" allowfullscreen></iframe>
 
-John Cleese’s strategies to overcome our biases reminded me of the an old maxim of design, which is to...
+John Cleese’s strategies to overcome our biases reminded me of an old maxim of design, which is to...
 
 > Fall in love with the problem—not the solution.
 
