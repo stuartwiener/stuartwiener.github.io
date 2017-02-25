@@ -18,13 +18,13 @@ html {
   }
 }
 ::-moz-selection {
-    color: $text-color;
-    background: $brand-color;
+    color: $background-color;
+    background: $text-color;
 }
 
 ::selection {
-  color: $text-color;
-  background: $brand-color;
+  color: $background-color;
+  background: $text-color;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: $other-font-family;
@@ -76,10 +76,9 @@ a {
   color: $text-color;
   border-bottom: 2px solid $text-color;
   transition: background-size 0.15s ease-out;
-  background: $other-color;
-  background: -moz-linear-gradient(180deg, transparent 70%, $other-color 71%);
-  background: -webkit-linear-gradient(180deg, transparent 70%, $other-color 71%);
-  background: linear-gradient(180deg, transparent 70%, $other-color 71%);
+  background: -moz-linear-gradient(180deg, transparent 50%, $brand-color 49%);
+  background: -webkit-linear-gradient(180deg, transparent 50%, $brand-color 49%);
+  background: linear-gradient(180deg, transparent 50%, $brand-color 49%);
   background-repeat: no-repeat;
   background-size: 0 100%;
 }
@@ -88,12 +87,12 @@ a:hover {
 }
 .plain-link {
   border-bottom: none;
-  color: $brand-color;
+  color: $other-color;
   transition: color 0.15s ease-out;
 }
 .plain-link:hover {
   background: none;
-  color: $other-color;
+  color: $brand-color;
 }
 p {
   margin: $spacing-unit 0;
