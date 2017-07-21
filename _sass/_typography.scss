@@ -2,7 +2,7 @@
  * Basic styling
  */
 html {
-    font: $base-font-weight 1.125em/#{$base-line-height} $base-font-family;
+    font: $base-font-weight 1em/#{$base-line-height} $base-font-family;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
@@ -29,14 +29,21 @@ html {
 a {
   color: $brand-color;
 }
+a:hover {
+  color: $text-color;
+}
 
 p {
-  font-size: 0.75em;
+  font-size: 1em;
   margin: 1em 0;
   font-weight: 400;
 }
-p:first-child {
-  font-size: 1em;
+ol, ul {
+  padding: 0 0 0 1em;
+  margin: 1em 0;
+}
+li {
+
 }
 img {
   max-width: 100%;
