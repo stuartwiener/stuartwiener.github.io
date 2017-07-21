@@ -26,140 +26,31 @@ html {
   color: $background-color;
   background: $text-color;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: $other-font-family;
-  font-weight: 400;
-  text-decoration: none;
-  font-size: 1em;
-  margin: $spacing-unit 0;
-}
-h1 {
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-}
-h2 {
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-}
-h3 {
-
-}
-h4 {
-
-}
-h5 {
-
-}
-h6 {
-
-}
-.site-header {
-  h1,h2 {
-    font-family: $base-font-family;
-    text-transform: none;
-    letter-spacing: 0;
-    font-weight: 400;
-  }
-  a.plain-link {
-    vertical-align: middle;
-  }
-}
-.post-list {
-  h2 {
-    font-weight: 700;
-  }
-}
 a {
-  text-decoration: none;
-  position: relative;
-  color: $text-color;
-  border-bottom: 2px solid $text-color;
-  transition: background-size 0.15s ease-out;
-  background: -moz-linear-gradient(180deg, transparent 50%, $brand-color 49%);
-  background: -webkit-linear-gradient(180deg, transparent 50%, $brand-color 49%);
-  background: linear-gradient(180deg, transparent 50%, $brand-color 49%);
-  background-repeat: no-repeat;
-  background-size: 0 100%;
-}
-a:hover {
-  background-size: 100% 100%;
-}
-.plain-link {
-  border-bottom: none;
-  color: $other-color;
-  transition: color 0.15s ease-out;
-}
-.plain-link:hover {
-  background: none;
   color: $brand-color;
 }
+
 p {
-  margin: $spacing-unit 0;
-  padding: 0;
-}
-ul {
-  margin: $spacing-unit 0;
-  padding: 0 0 0 $spacing-unit*1.5;
-  list-style: disc;
-}
-ol {
-  margin: $spacing-unit 0;
-  padding: 0 0 0 $spacing-unit*1.5;
-  list-style: decimal;
-}
-blockquote {
-  margin: $spacing-unit 0;
-  padding: 1px $spacing-unit;
-  background: $grey-color;
-}
-cite {
-  font-family: $other-font-family;
-  font-style: normal;
-}
-cite::before {
-  content: '—'
-}
-em {
-  font-family: $other-font-family;
+  font-size: 0.75em;
+  margin: 1em 0;
   font-weight: 400;
-  font-style: italic;
 }
-strong {
-  font-weight: 700;
-}
-figure {
-  margin: $spacing-unit 0;
-  padding: 0;
-  max-width: 100%;
-  height: auto;
-}
-figcaption {
-  font-size: $small-font-size;
+p:first-child {
+  font-size: 1em;
 }
 img {
   max-width: 100%;
   height: auto;
-}
-iframe {
-  max-width: 100%;
-  height: auto;
-}
-pre, code, kbd {
-  font-family: monospace;
-  background: $grey-color;
-  margin: $spacing-unit 0;
+  margin: 0;
   padding: 0;
 }
-pre {
-  max-width: 100%;
-  padding: $spacing-unit;
-  overflow-x: auto;
+h1 {
+  font-size: 1em;
+  margin: 1em 0;
+  font-weight: 400;
 }
-.post-meta {
-  font-size: $small-font-size;
-}
-.site-footer-final {
-  font-family: $other-font-family;
-  font-size: $small-font-size;
+h2 {
+  font-size: 1em;
+  margin: 1em 0;
+  font-weight: 400;
 }

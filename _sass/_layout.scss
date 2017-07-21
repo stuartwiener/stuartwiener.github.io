@@ -1,75 +1,19 @@
-// Header
+html {
+  background: $background-color;
+}
+.wrapper {
+  margin: 0 1em;
+}
+@media screen and (min-width:40em) {
+  .wrapper {
+    max-width: 50%;
+  }
+}
 .site-header {
-  background: $light-color;
-
-  .wrapper {
-    max-width: $primary-width;
-    margin: 0 auto;
-
-    .site-heading {
-      max-width: $content-width;
-      margin: 0;
-      box-sizing: border-box;
-      padding: $spacing-unit*2 $spacing-unit;
-
-      * {
-        display: inline;
-      }
-    }
-  }
+  margin: 0 auto;
+  max-width: 40em;
 }
-
-// Main content
 .site-content {
-  max-width: $primary-width;
   margin: 0 auto;
-
-  .wrapper {
-    max-width: $content-width;
-    margin: 0;
-    box-sizing: border-box;
-    padding: $spacing-unit;
-  }
-}
-
-// Footer
-.site-footer {
-  max-width: $primary-width;
-  margin: 0 auto;
-
-  .wrapper {
-    max-width: $content-width;
-    margin: 0;
-    box-sizing: border-box;
-    padding: $spacing-unit;
-  }
-}
-
-// Other
-.wrapper .home {
-  padding: $spacing-unit 0;
-  .icon-arrow {
-    display: inline-block;
-    padding: 0 6px;
-  }
-}
-.post-list {
-  padding: 0;
-  list-style: disc;
-  display: inline;
-
-  li {
-    display: inline;
-    h2, span {
-      display: inline;
-    }
-    &:after {
-      content: '•';
-      display: inline-block;
-      padding: 0 6px;
-      position: relative;
-      top: 2px;
-
-    }
-  }
+  max-width: 40em;
 }
