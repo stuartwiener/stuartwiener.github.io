@@ -4,16 +4,16 @@ html {
 .wrapper {
   margin: 0 1em;
 }
-@media screen and (min-width:40em) {
+@media screen and (min-width:42em) {
   .wrapper {
     max-width: 50%;
   }
 }
 .site-header {
   margin: 0 auto;
-  max-width: 40em;
+  max-width: 42em;
 }
 .site-content {
   margin: 0 auto;
-  max-width: 40em;
+  max-width: 42em;
 }

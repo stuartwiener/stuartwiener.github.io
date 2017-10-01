@@ -39,19 +39,19 @@
 }
 
 // Our variables
-$base-font-family: 'Libre Franklin', sans-serif;
-$base-font-size:   1.125em;
+$base-font-family: 'Source Code Pro', monospace;
+$base-font-size:   1.25em;
 $base-font-weight: 400;
 $base-line-height: 1.5;
 
 $spacing-unit:     1.5em;
 
-$text-color:       #1A1A1A;
-$background-color: #F8F7F3;
-$brand-color:      #3D75BE;
+$text-color:       #C8C7C3;
+$background-color: #000000;
+$brand-color:      #F8F7F3;
 
 $primary-width:    42em;
-$content-width:    34em;
+$content-width:    38em;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
