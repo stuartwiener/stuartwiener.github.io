@@ -12,7 +12,7 @@ email: hello@stuartwiener.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://stuartwiener.com" # the base hostname & protocol for your site
 twitter_username: stuartwiener
-reading_twitter_username: stuartisreading
+facebook_username: stuartwiener
 github_username: stuartwiener
 
 # Build settings

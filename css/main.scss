@@ -6,11 +6,11 @@
 // Load up the icon font.
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?yxr5hj');
-  src:  url('../fonts/icomoon.eot?yxr5hj#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?yxr5hj') format('truetype'),
-    url('../fonts/icomoon.woff?yxr5hj') format('woff'),
-    url('../fonts/icomoon.svg?yxr5hj#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?pc9q4b');
+  src:  url('../fonts/icomoon.eot?pc9q4b#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?pc9q4b') format('truetype'),
+    url('../fonts/icomoon.woff?pc9q4b') format('woff'),
+    url('../fonts/icomoon.svg?pc9q4b#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -30,30 +30,32 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow:before {
-  content: "\e900";
-  font-size: 0.777em;
+.icon-facebook:before {
+  content: "\ea91";
 }
 .icon-twitter:before {
-  content: "\e901";
+  content: "\ea96";
+}
+.icon-github:before {
+  content: "\eab0";
 }
 
 // Load up the font.
 @font-face {
   font-family: 'CooperHewitt';
-  src:  url('../fonts/cooperhewitt/CooperHewitt-Book.eot');
-  src:  url('../fonts/cooperhewitt/CooperHewitt-Book.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/cooperhewitt/CooperHewitt-Book.woff') format('woff'),
-    url('../fonts/cooperhewitt/CooperHewitt-Book.svg') format('svg');
+  src:  url('../fonts/cooperhewitt/CooperHewitt-Medium.eot');
+  src:  url('../fonts/cooperhewitt/CooperHewitt-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cooperhewitt/CooperHewitt-Medium.woff') format('woff'),
+    url('../fonts/cooperhewitt/CooperHewitt-Medium.svg') format('svg');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'CooperHewitt';
-  src:  url('../fonts/cooperhewitt/CooperHewitt-BookItalic.eot');
-  src:  url('../fonts/cooperhewitt/CooperHewitt-BookItalic.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/cooperhewitt/CooperHewitt-BookItalic.woff') format('woff'),
-    url('../fonts/cooperhewitt/CooperHewitt-BookItalic.svg') format('svg');
+  src:  url('../fonts/cooperhewitt/CooperHewitt-MediumItalic.eot');
+  src:  url('../fonts/cooperhewitt/CooperHewitt-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cooperhewitt/CooperHewitt-MediumItalic.woff') format('woff'),
+    url('../fonts/cooperhewitt/CooperHewitt-MediumItalic.svg') format('svg');
   font-weight: 400;
   font-style: italic;
 }
@@ -70,18 +72,17 @@
 
 // Our variables
 $base-font-family: 'CooperHewitt', Helvetica, Arial, sans-serif;
-$base-font-size:   1.25em;
+$base-font-size:   1.125em;
 $base-font-weight: 400;
 $base-line-height: 1.5;
 
 $spacing-unit:     1.5em;
 
-$text-color:       #CACBCF;
+$text-color:       #EAEBEF;
 $background-color: #0F0F0F;
-$brand-color:      #F8F7F3;
+$brand-color:      #4A4B4F;
 
-$primary-width:    42em;
-$content-width:    38em;
+$primary-width:    52em;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

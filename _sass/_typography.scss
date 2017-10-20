@@ -14,15 +14,15 @@ html {
 }
 ::-moz-selection {
     color: $background-color;
-    background: $text-color;
+    background: yellow;
 }
-
 ::selection {
   color: $background-color;
-  background: $text-color;
+  background: yellow;
 }
 a {
   color: $brand-color;
+  text-decoration: none;
 }
 a:hover {
   color: $text-color;
@@ -30,12 +30,12 @@ a:hover {
 
 p {
   font-size: 1em;
-  margin: 1em 0;
+  margin: $spacing-unit 0;
   font-weight: $base-font-weight;
 }
 ol, ul {
   padding: 0 0 0 1em;
-  margin: 1em 0;
+  margin: $spacing-unit 0;
 }
 li {
 
@@ -48,11 +48,11 @@ img {
 }
 h1 {
   font-size: 1em;
-  margin: 1em 0;
+  margin: $spacing-unit 0;
   font-weight: $base-font-weight;
 }
 h2 {
   font-size: 1em;
-  margin: 1em 0;
+  margin: $spacing-unit 0;
   font-weight: $base-font-weight;
 }

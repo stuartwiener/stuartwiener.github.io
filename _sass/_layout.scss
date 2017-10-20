@@ -4,16 +4,21 @@ html {
 .wrapper {
   margin: 0 1em;
 }
-@media screen and (min-width:42em) {
+@media screen and (min-width:50em) {
   .wrapper {
     max-width: 50%;
   }
 }
-.site-header {
+.site-header,
+.site-content,
+.site-footer {
   margin: 0 auto;
-  max-width: 42em;
+  max-width: $primary-width;
 }
-.site-content {
-  margin: 0 auto;
-  max-width: 42em;
+.site-footer {
+  text-align: center;
+}
+.site-footer a {
+  font-size: 1.25em;
+  margin: $spacing-unit / 2;
 }
