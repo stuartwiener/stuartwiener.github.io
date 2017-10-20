@@ -6,11 +6,6 @@ html {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
-    -webkit-font-feature-settings: "kern" 1;
-    -moz-font-feature-settings: "kern" 1;
-    -o-font-feature-settings: "kern" 1;
-    font-feature-settings: "kern" 1;
-    font-kerning: normal;
 }
 @media screen and (min-width:40em) {
   html {
@@ -36,7 +31,7 @@ a:hover {
 p {
   font-size: 1em;
   margin: 1em 0;
-  font-weight: 400;
+  font-weight: $base-font-weight;
 }
 ol, ul {
   padding: 0 0 0 1em;
@@ -54,10 +49,10 @@ img {
 h1 {
   font-size: 1em;
   margin: 1em 0;
-  font-weight: 400;
+  font-weight: $base-font-weight;
 }
 h2 {
   font-size: 1em;
   margin: 1em 0;
-  font-weight: 400;
+  font-weight: $base-font-weight;
 }
