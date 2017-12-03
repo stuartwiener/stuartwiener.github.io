@@ -13,11 +13,11 @@ html {
   }
 }
 ::-moz-selection {
-    color: $background-color;
+    color: $text-color;
     background: yellow;
 }
 ::selection {
-  color: $background-color;
+  color: $text-color;
   background: yellow;
 }
 a {
