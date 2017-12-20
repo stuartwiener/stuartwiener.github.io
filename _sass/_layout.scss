@@ -19,9 +19,9 @@ html {
   margin-top: 1em;
 }
 .site-footer {
-  text-align: center;
+
 }
 .site-footer a {
   font-size: 1.25em;
-  margin: $spacing-unit / 2;
+  margin: $spacing-unit $spacing-unit $spacing-unit 0;
 }
