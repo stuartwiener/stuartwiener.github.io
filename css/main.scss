@@ -6,11 +6,11 @@
 // Load up the icon font.
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?pc9q4b');
-  src:  url('../fonts/icomoon.eot?pc9q4b#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?pc9q4b') format('truetype'),
-    url('../fonts/icomoon.woff?pc9q4b') format('woff'),
-    url('../fonts/icomoon.svg?pc9q4b#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?o33a7o');
+  src:  url('../fonts/icomoon.eot?o33a7o#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?o33a7o') format('truetype'),
+    url('../fonts/icomoon.woff?o33a7o') format('woff'),
+    url('../fonts/icomoon.svg?o33a7o#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -28,6 +28,19 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\ea91";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin:before {
+  content: "\eac9";
 }
 
 .icon-facebook:before {
