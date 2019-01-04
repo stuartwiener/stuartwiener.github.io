@@ -14,6 +14,7 @@ url: "http://stuartwiener.com" # the base hostname & protocol for your site
 twitter_username: stuartwiener
 facebook_username: stuartwiener
 github_username: stuartwiener
+instagram_username: stuartwiener
 
 # Build settings
 markdown: kramdown
