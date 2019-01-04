@@ -21,15 +21,18 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  height: 0.6em;
+  height: 1.8em;
   width: 100%;
   background: $brand-color; /* Old browsers */
   background: -moz-linear-gradient(left, $brand-color 0%, #ffd0c1 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(left, $brand-color 0%,#ffd0c1 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, $brand-color 0%,#ffd0c1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  z-index: -1;
 }
 .site {
-  margin-top: 0.6em;
+  padding-top: 0.6em;
+  position: relative;
+  z-index: 1;
 }
 .site-header {
   // padding-top: 1em;
