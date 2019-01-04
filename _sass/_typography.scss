@@ -14,11 +14,11 @@ html {
 }
 ::-moz-selection {
     color: $heading-color;
-    background: yellow;
+    background: #ffd0c1;
 }
 ::selection {
   color: $heading-color;
-  background: yellow;
+  background: #ffd0c1;
 }
 a {
   color: $brand-color;

@@ -6,7 +6,7 @@ html {
 }
 @media screen and (min-width:50em) {
   .wrapper {
-    max-width: 50%;
+    max-width: 60%;
   }
 }
 .site-header,
@@ -34,8 +34,9 @@ html {
   position: relative;
   z-index: 1;
 }
-.site-header {
-  // padding-top: 1em;
+.site-footer {
+  padding-top: 0.6em;
+  padding-bottom: 6em;
 }
 .site-footer a {
   font-size: 1.25em;
