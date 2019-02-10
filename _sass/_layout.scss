@@ -17,8 +17,14 @@ html {
 }
 
 .site {
-  padding-top: 0.6em;
+  padding-top: 1.8em;
 }
+.site-header img {
+  max-width: 40%;
+  border-radius: 50%;
+
+}
+
 .site-footer {
   padding-top: 0.6em;
   padding-bottom: 6em;
