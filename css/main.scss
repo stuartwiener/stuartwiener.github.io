@@ -47,24 +47,25 @@
 }
 
 // Our variables
-$text-font-family: 'IBM Plex Serif', serif;
-$text-font-size:   16px;
-$text-font-weight: 400;
-$text-line-height: 1.2;
+$text-font-family:      'IBM Plex Serif', serif;
+$text-font-size:        16  px;
+$text-font-weight:      400;
+$text-line-height:      24px;
 
-$display-font-family: 'IBM Plex Sans', sans-serif;
-$display-font-size: 20px;
-$display-font-weight: 400;
-$display-line-height: 1.2;
+$display-font-family:   'IBM Plex Sans', sans-serif;
+$display-font-size:     20px;
+$display-font-weight:   600;
+$display-line-height:   28px;
 
-$spacing-unit:     1.2em;
+$spacing-unit:          20px;
 
-$heading-color:    #FFFFFF;
-$text-color:       #DDDDDD;
-$background-color: rgb(10, 11, 12);
-$brand-color:      rgb(212, 95, 124);
+$heading-color:         #FFFFFF;
+$text-color:            #DDDDDD;
+$background-color:      rgb(10, 11, 12);
+$brand-color:           rgb(55, 120, 100);
+$brand-light-color:     rgb(75, 170, 140);
 
-$primary-width:    54em;
+$primary-width:         1080px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

@@ -1,16 +1,14 @@
 <header class="site-header">
-
   <div class="wrapper">
-
-      <img src="images/stuart_wiener_2019.jpg" alt="Stuart Wiener">
+    
+      <a class="cleared-a" href="{{ site.url }}">
+        <img src="{{ site.url }}/images/stuart_wiener_2019.jpg" alt="Stuart Wiener">
+      </a>
 
       <ul>
-        {%- for page in site.pages -%}
-            {%- if page.title -%}
-            <li><a class="page-link" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a></li>
-            {%- endif -%}
-          {%- endfor -%}
-      </ul>
+          <li>hello@stuartwiener.com</li>
+          <li><a href="{{ site.url }}/resume/">Résumé</a></li>
+        </ul>
 
       <ul>
         <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/"><span class="icon-linkedin"></span> LinkedIn</a></li>
@@ -20,5 +18,4 @@
       </ul>
 
   </div>
-
 </header>
