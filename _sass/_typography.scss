@@ -2,14 +2,14 @@
  * Basic styling
  */
 html {
-    font: $base-font-weight 1em/#{$base-line-height} $base-font-family;
+    font: $text-font-weight 1em/#{$text-line-height} $text-font-family;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
 }
 @media screen and (min-width:40em) {
   html {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    font: $text-font-weight #{$text-font-size}/#{$text-line-height} $text-font-family;
   }
 }
 ::-moz-selection {
@@ -21,17 +21,21 @@ html {
   background: #F8FF8F;
 }
 a {
-  color: $brand-color;
+  color: $text-color;
   text-decoration: none;
+  border-bottom: 1px solid $brand-color;
 }
 a:hover {
-  color: $text-color;
+  color: $brand-color;
+}
+strong {
+  font-weight: 600;
 }
 
 p {
   font-size: 1em;
   margin: $spacing-unit 0;
-  font-weight: $base-font-weight;
+  font-weight: $text-font-weight;
 }
 ol, ul {
   padding: 0 0 0 1em;
@@ -47,12 +51,14 @@ img {
   padding: 0;
 }
 h1 {
+  font-family: $display-font-family;
   font-size: 1.5em;
   margin: $spacing-unit/1.5 0;
   font-weight: 600;
   color: $heading-color;
 }
 h2 {
+  font-family: $display-font-family;
   font-size: 1.2em;
   margin: $spacing-unit/1.2 0;
   font-weight: 400;

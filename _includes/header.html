@@ -4,7 +4,20 @@
 
       <img src="images/stuart_wiener_2019.jpg" alt="Stuart Wiener">
 
-      <h1>Stuart Wiener is a designer and product strategist, living and working from Johannesburg, South Africa.</h1>
+      <ul>
+        {%- for page in site.pages -%}
+            {%- if page.title -%}
+            <li><a class="page-link" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a></li>
+            {%- endif -%}
+          {%- endfor -%}
+      </ul>
+
+      <ul>
+        <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/"><span class="icon-linkedin"></span> LinkedIn</a></li>
+        <li><a href="https://instagram.com/{{ site.instagram_username }}"><span class="icon-instagram"></span> Instagram</a></li>
+        <li><a href="https://twitter.com/{{ site.twitter_username }}"><span class="icon-twitter"></span> Twitter</a></li>
+        <li><a href="https://github.com/{{ site.github_username }}"><span class="icon-github"></span> Github</a></li>
+      </ul>
 
   </div>
 
