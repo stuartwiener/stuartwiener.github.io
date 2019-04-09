@@ -11,11 +11,11 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 ::-moz-selection {
-    color: $heading-color;
+    color: $display-color;
     background: $brand-color;
 }
 ::selection {
-  color: $heading-color;
+  color: $display-color;
   background: $brand-color;
 }
 a {
@@ -24,7 +24,7 @@ a {
   border-bottom: 1px solid $brand-color;
 }
 a:hover {
-  color: $brand-light-color;
+  color: $display-color;
 }
 strong {
   font-weight: 600;
@@ -50,18 +50,30 @@ h1 {
   font-family: $display-font-family;
   font-size:   $display-font-size;
   line-height: $display-line-height;
-  margin: $spacing-unit 0;
+  margin: 0;
   font-weight: $display-font-weight;
-  color: $heading-color;
+  color: $display-color;
 }
 
 h2 {
   font-family: $display-font-family;
   font-size:   $text-font-size;
   line-height: $text-line-height;
-  margin: $spacing-unit 0;
+  margin: 0;
   font-weight: $display-font-weight;
-  color: $heading-color;
+  color: $text-color;
+}
+
+h3 {
+  font-family: $display-font-family;
+  font-size:   $text-font-size;
+  line-height: $text-line-height;
+  margin: 0 0 $spacing-unit 0;
+  font-weight: $text-font-weight;
+  color: $secondary-color;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid $secondary-color;
 }
 
 .cleared-a {
@@ -78,4 +90,5 @@ h2 {
 }
 .site-footer {
   font-family: $display-font-family;
+  color: $secondary-color;
 }

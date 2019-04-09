@@ -48,7 +48,7 @@
 
 // Our variables
 $text-font-family:      'IBM Plex Serif', serif;
-$text-font-size:        16  px;
+$text-font-size:        16px;
 $text-font-weight:      400;
 $text-line-height:      24px;
 
@@ -59,13 +59,14 @@ $display-line-height:   28px;
 
 $spacing-unit:          20px;
 
-$heading-color:         #FFFFFF;
-$text-color:            #DDDDDD;
+$display-color:         #FFFFFF;
+$text-color:            #C6C6C6;
+$secondary-color:       #555555;
 $background-color:      rgb(10, 11, 12);
 $brand-color:           rgb(55, 120, 100);
-$brand-light-color:     rgb(75, 170, 140);
+$brand-light-color:     rgb(75, 170, 150);
 
-$primary-width:         1080px;
+$primary-width:         960px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
