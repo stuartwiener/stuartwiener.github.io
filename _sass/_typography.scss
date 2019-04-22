@@ -2,17 +2,20 @@
  * Basic styling
  */
 html {
-    font-family: $text-font-family;
-    font-size: $text-font-size;
-    line-height: $text-line-height;
-    font-weight: $text-font-weight;
-    color: $text-color;
-    background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
+  font-family: $text-font-family;
+  font-size: $text-font-size;
+  line-height: $text-line-height;
+  font-weight: $text-font-weight;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
 }
 ::-moz-selection {
-    color: $display-color;
-    background: $brand-color;
+  color: $display-color;
+  background: $brand-color;
 }
 ::selection {
   color: $display-color;
@@ -48,7 +51,7 @@ img {
 
 h1 {
   font-family: $display-font-family;
-  font-size:   $display-font-size;
+  font-size: $display-font-size;
   line-height: $display-line-height;
   margin: 0;
   font-weight: $display-font-weight;
@@ -57,11 +60,11 @@ h1 {
 
 h2 {
   font-family: $display-font-family;
-  font-size:   $text-font-size;
+  font-size: $text-font-size;
   line-height: $text-line-height;
   margin: 0;
   font-weight: $display-font-weight;
-  color: $text-color;
+  color: $display-color;
 }
 
 h3 {
@@ -74,6 +77,19 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 1px;
   border-bottom: 1px solid $secondary-color;
+}
+
+blockquote {
+  padding: 0 0 0 $spacing-unit;
+  margin: $spacing-unit 0;
+  font-style: italic;
+  border-left: 3px solid $secondary-color;
+  font-size: $text-font-size;
+  position: relative;
+
+  em {
+    color: $secondary-color;
+  }
 }
 
 .cleared-a {
