@@ -10,7 +10,7 @@ title: Stuart Wiener
 description: Product designer and design thinker living and working in Johannesburg, South Africa.
 email: hello@stuartwiener.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://stuartwiener.com" # the base hostname & protocol for your site
+url: "https://stuartwiener.com" # the base hostname & protocol for your site
 twitter_username: stuartwiener
 facebook_username: stuartwiener
 github_username: stuartwiener
