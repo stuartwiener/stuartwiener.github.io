@@ -9,9 +9,6 @@ html {
   color: $text-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1.5;
 }
 ::-moz-selection {
   color: $display-color;
@@ -23,18 +20,20 @@ html {
 }
 a {
   color: $text-color;
-  text-decoration: none;
-  border-bottom: 1px solid $brand-color;
+  text-decoration: underline;
+  text-decoration-color: $secondary-color;
+  text-decoration-skip: ink;
 }
 a:hover {
-  color: $display-color;
+  color: $brand-color;
+  text-decoration-color: $brand-color;
 }
 strong {
   font-weight: 600;
 }
 
 p {
-  font-size: 1em;
+  font-size: $text-font-size;
   margin: $spacing-unit 0;
   font-weight: $text-font-weight;
 }
@@ -98,13 +97,12 @@ blockquote {
 
 .site-header {
   font-family: $display-font-family;
-
+}
+.site-footer {
+  font-family: $display-font-family;
+  
   ul {
     list-style: none;
     padding: 0;
   }
-}
-.site-footer {
-  font-family: $display-font-family;
-  color: $secondary-color;
 }

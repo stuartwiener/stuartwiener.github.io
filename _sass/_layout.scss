@@ -27,20 +27,20 @@ html {
   }
 }
 
-@media screen and (min-width: $primary-width) {
-  .site {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .site-header {
-    width: 30%;
-  }
-  .site-content {
-    width: 70%;
-    padding-top: 174px;
-  }
-  .site-footer {
-    width: 70%;
-    padding-left: 30%;
-  }
-}
+// @media screen and (min-width: $primary-width) {
+//   .site {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+//   .site-header {
+//     width: 30%;
+//   }
+//   .site-content {
+//     width: 70%;
+//     padding-top: 174px;
+//   }
+//   .site-footer {
+//     width: 70%;
+//     padding-left: 30%;
+//   }
+// }
