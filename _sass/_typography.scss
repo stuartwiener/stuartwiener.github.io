@@ -1,45 +1,48 @@
 /**
  * Basic styling
  */
+
 html {
-  font-family: $text-font-family;
-  font-size: $text-font-size;
-  line-height: $text-line-height;
-  font-weight: $text-font-weight;
-  color: $text-color;
-  background-color: $background-color;
+  font-family: var(--sans-serif);
+  font-size: var(--size-3);
+  line-height: var(--lineheight-3);
+  font-weight: 400;
+  color: var(--foreground);
   -webkit-text-size-adjust: 100%;
 }
 ::-moz-selection {
-  color: $display-color;
-  background: $brand-color;
+  color: var(--background);
+  background: var(--color-1);
 }
 ::selection {
-  color: $display-color;
-  background: $brand-color;
+  color: var(--background);
+  background: var(--color-1);
 }
 a {
-  color: $text-color;
+  color: var(--foreground);
   text-decoration: underline;
-  text-decoration-color: $secondary-color;
-  text-decoration-skip: ink;
+  background-color: var(--color-2);
+  cursor: pointer;
 }
 a:hover {
-  color: $brand-color;
-  text-decoration-color: $brand-color;
+  background-color: transparent;
+  color: var(--color-1);
+  text-decoration-color: var(--color-1);
 }
 strong {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 p {
-  font-size: $text-font-size;
-  margin: $spacing-unit 0;
-  font-weight: $text-font-weight;
+  font-size: var(--size-3);
+  line-height: var(--lineheight-3);
+  letter-spacing: var(--letterspacing-3);
+  margin: var(--space-1) 0;
+  font-weight: 400;
 }
 ol, ul {
-  padding: 0 0 0 1em;
-  margin: $spacing-unit 0;
+  padding: 0 0 0 var(--space-1);
+  margin: var(--space-1) 0;
 }
 img {
   max-width: 100%;
@@ -49,60 +52,56 @@ img {
 }
 
 h1 {
-  font-family: $display-font-family;
-  font-size: $display-font-size;
-  line-height: $display-line-height;
-  margin: 0;
-  font-weight: $display-font-weight;
-  color: $display-color;
+  font-size: var(--size-1);
+  line-height: var(--lineheight-1);
+  letter-spacing: var(--letterspacing-1);
+  margin: var(--space-1) 0;
+  font-weight: 500;
+  color: var(--foreground);
 }
 
 h2 {
-  font-family: $display-font-family;
-  font-size: $text-font-size;
-  line-height: $text-line-height;
-  margin: 0;
-  font-weight: $display-font-weight;
-  color: $display-color;
+  font-size: var(--size-2);
+  line-height: var(--lineheight-2);
+  letter-spacing: var(--letterspacing-2);
+  margin: var(--space-1) 0;
+  font-weight: 500;
+  color: var(--foreground);
 }
 
 h3 {
-  font-family: $display-font-family;
-  font-size:   $text-font-size;
-  line-height: $text-line-height;
-  margin: 0 0 $spacing-unit 0;
-  font-weight: $text-font-weight;
-  color: $secondary-color;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-bottom: 1px solid $secondary-color;
+  font-size: var(--size-3);
+  line-height: var(--lineheight-3);
+  letter-spacing: var(--letterspacing-3);
+  margin: var(--space-1) 0;
+  font-weight: 700;
+  color: var(--foreground);
 }
 
 blockquote {
-  padding: 0 0 0 $spacing-unit;
-  margin: $spacing-unit 0;
+  padding: 0;
+  margin: var(--space-1) 0;
   font-style: italic;
-  border-left: 3px solid $secondary-color;
-  font-size: $text-font-size;
+  font-size: var(--text-3-size);
   position: relative;
+}
 
-  em {
-    color: $secondary-color;
+.invisible {
+  display: none;
+}
+
+header {
+  h1, img, p{
+    display: inline;
+    font-weight: 500;
+    font-size: var(--text-1-size);
+    line-height: var(--text-1-lineheight);
+    letter-spacing: -0.022em;
   }
 }
 
-.cleared-a {
-  border-bottom: none;
-}
-
-.site-header {
-  font-family: $display-font-family;
-}
-.site-footer {
-  font-family: $display-font-family;
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
+header img {
+  height: var(--text-1-lineheight);
+  border-radius: 50%;
+  vertical-align: bottom;
 }

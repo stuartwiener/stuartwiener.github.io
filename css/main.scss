@@ -3,89 +3,135 @@
 ---
 @charset "utf-8";
 
-// Load up the icon font.
 @font-face {
-  font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?hvhsf5');
-  src:  url('../fonts/icomoon.eot?hvhsf5#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?hvhsf5') format('truetype'),
-    url('../fonts/icomoon.woff?hvhsf5') format('woff'),
-    url('../fonts/icomoon.svg?hvhsf5#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-Regular.woff2?v=3.12") format("woff2"),
+       url("../fonts/inter/Inter-Regular.woff?v=3.12") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-Italic.woff2?v=3.12") format("woff2"),
+       url("../fonts/inter/Inter-Italic.woff?v=3.12") format("woff");
 }
 
 @font-face {
-  font-family: 'Untitled Sans Test';
-  src:  url('../fonts/untitled-sans/untitled-sans-test-regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-Medium.woff2?v=3.12") format("woff2"),
+       url("../fonts/inter/Inter-Medium.woff?v=3.12") format("woff");
 }
 @font-face {
-  font-family: 'Untitled Sans Test';
-  src:  url('../fonts/untitled-sans/untitled-sans-test-regular-italic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-MediumItalic.woff2?v=3.12") format("woff2"),
+       url("../fonts/inter/Inter-MediumItalic.woff?v=3.12") format("woff");
 }
+
 @font-face {
-  font-family: 'Untitled Sans Test';
-  src:  url('../fonts/untitled-sans/untitled-sans-test-medium.woff') format('woff');
+  font-family: 'Inter';
+  font-style:  normal;
   font-weight: 600;
-  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-SemiBold.woff2?v=3.12") format("woff2"),
+       url("../fonts/inter/Inter-SemiBold.woff?v=3.12") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-SemiBoldItalic.woff2?v=3.12") format("woff2"),
+       url("../fonts/inter/Inter-SemiBoldItalic.woff?v=3.12") format("woff");
 }
 
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-Bold.woff2?v=3.12") format("woff2"),
+       url("../fonts/inter/Inter-Bold.woff?v=3.12") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/inter/Inter-BoldItalic.woff2?v=3.12") format("woff2"),
+       url("../fonts/inter/Inter-BoldItalic.woff?v=3.12") format("woff");
 }
 
-.icon-facebook:before {
-  content: "\ea91";
-}
-.icon-instagram:before {
-  content: "\ea92";
-}
-.icon-twitter:before {
-  content: "\ea96";
-}
-.icon-github:before {
-  content: "\eab0";
-}
-.icon-linkedin:before {
-  content: "\eac9";
-}
+:root {
 
-// Our variables
-$text-font-family:      'Untitled Sans Test', sans-serif;
-$text-font-size:        18px;
-$text-font-weight:      400;
-$text-line-height:      24px;
+  --background: #FBFCFC;
+  --foreground: #111111;
+  --color-1: #3353CC;
+  --color-2: #E6D2C7;
+  --color-3: #EEE2DC;
 
-$display-font-family:   'Untitled Sans Test', sans-serif;
-$display-font-size:     20px;
-$display-font-weight:   600;
-$display-line-height:   28px;
+  --size-1: 65px;
+  --size-2: 40px;
+  --size-3: 30px;
+  --size-4: 24px;
 
-$spacing-unit:          21px;
+  --lineheight-1: 90px;
+  --lineheight-2: 50px;
+  --lineheight-3: 40px;
+  --lineheight-4: 30px;
 
-$display-color:         #111111;
-$text-color:            #444444;
-$secondary-color:       #999999;
-$background-color:      #DCDBDB;
-$brand-color:           #3353CC;
-$brand-light-color:     #A28170;
+  --letterspacing-1: -0.022em;
+  --letterspacing-2: -0.022em;
+  --letterspacing-3: -0.021em;
+  --letterspacing-4: -0.019em;
 
-$primary-width:         720px;
+  --sans-serif: 'inter', sans-serif;
+
+  --space-1: 20px;
+  --space-2: 30px;
+  --space-3: 40px;
+
+
+
+
+
+
+
+  --background-1-color: #FBFCFC;
+  --background-2-color: #9C9B9B;
+  --text-1-color: #111111;
+  --text-2-color: #333333;
+  --text-3-color:  #999999;
+  --text-4-color: #BBBBBB;
+
+
+  
+
+  --serif: 'Charter', 'Georgia', serif;
+
+  --text-1-size: 65px;
+  --text-2-size: 32px;
+  --text-3-size: 24px;
+  --text-4-size: 20px;
+
+  --text-1-lineheight: 90px;
+  --text-2-lineheight: 36px;
+  --text-3-lineheight: 28px;
+  --text-4-lineheight: 24px;
+
+
+
+  background: var(--background-1-color);
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
