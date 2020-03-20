@@ -1,46 +1,12 @@
-html {
-  background: $background-color;
-}
-.wrapper {
-  margin: $spacing-unit;
-}
-@media screen and (min-width: $primary-width) {
-  .wrapper {
-    margin: 1.5*$spacing-unit;
-  }
-}
-
 .site {
-  margin: 0 auto;
-  max-width: $primary-width;
+  margin: var(--space-1);
 }
-.site-header {
-  
-  img {
-    max-width: 150px;
-    border-radius: 100%;
-  }
-  li {
-    span {
-      margin-right: $spacing-unit / 4;
-    }
+@media screen and (min-width: 730px) {
+  .site {
+    margin: var(--space-3);
   }
 }
 
-@media screen and (min-width: $primary-width) {
-  .site {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .site-header {
-    width: 30%;
-  }
-  .site-content {
-    width: 70%;
-    padding-top: 174px;
-  }
-  .site-footer {
-    width: 70%;
-    padding-left: 30%;
-  }
-}
+// @media screen and (min-width: $primary-width) {
+//
+// }
