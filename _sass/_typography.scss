@@ -64,7 +64,7 @@ h1 {
   line-height: var(--lineheight-2);
   letter-spacing: var(--letterspacing-2);
   margin: var(--space-1) 0;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--foreground);
 }
 
@@ -73,7 +73,7 @@ h2 {
   line-height: var(--lineheight-3);
   letter-spacing: var(--letterspacing-3);
   margin: var(--space-1) 0;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--foreground);
 }
 
@@ -101,7 +101,7 @@ header {
     font-size: var(--size-2);
     line-height: var(--lineheight-2);
     letter-spacing: var(--letterspacing-2);
-    font-weight: 500;
+    font-weight: 600;
   }
   img {
     height: var(--lineheight-2);
@@ -171,5 +171,4 @@ header {
       vertical-align: bottom;
     }
   }
-
 }
