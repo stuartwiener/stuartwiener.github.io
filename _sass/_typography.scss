@@ -30,9 +30,8 @@ a {
   cursor: pointer;
 }
 a:hover {
-  background-color: transparent;
+  background-color: var(--color-2);
   color: var(--color-1);
-  text-decoration-color: var(--color-1);
 }
 strong {
   font-weight: 700;
