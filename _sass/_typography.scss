@@ -24,9 +24,9 @@ html {
   background: var(--color-1);
 }
 a {
-  color: var(--foreground);
+  color: var(--background);
   text-decoration: underline;
-  background-color: var(--color-2);
+  background-color: var(--color-1);
   cursor: pointer;
 }
 a:hover {
