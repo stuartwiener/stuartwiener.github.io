@@ -24,13 +24,13 @@ html {
   background: var(--color-1);
 }
 a {
-  color: var(--background);
+  color: var(--foreground);
   text-decoration: underline;
-  background-color: var(--color-1);
+  text-decoration-color: var(--color-1);
+  text-decoration-skip: ink;
   cursor: pointer;
 }
 a:hover {
-  background-color: var(--color-2);
   color: var(--color-1);
 }
 strong {
