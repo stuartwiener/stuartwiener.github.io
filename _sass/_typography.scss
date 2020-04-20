@@ -41,15 +41,15 @@ p {
   font-size: var(--size-4);
   line-height: var(--lineheight-4);
   letter-spacing: var(--letterspacing-4);
-  margin: var(--space-1) 0;
+  margin: 20px 0;
   font-weight: 400;
 }
 ol, ul {
   font-size: var(--size-4);
   line-height: var(--lineheight-4);
   letter-spacing: var(--letterspacing-4);
-  padding: 0 0 0 var(--space-1);
-  margin: var(--space-1) 0;
+  padding: 0 0 0 20px;
+  margin: 20px 0;
 }
 img {
   max-width: 100%;
@@ -62,8 +62,8 @@ h1 {
   font-size: var(--size-2);
   line-height: var(--lineheight-2);
   letter-spacing: var(--letterspacing-2);
-  margin: var(--space-1) 0;
-  font-weight: 600;
+  margin: 20px 0;
+  font-weight: 400;
   color: var(--foreground);
 }
 
@@ -71,8 +71,8 @@ h2 {
   font-size: var(--size-3);
   line-height: var(--lineheight-3);
   letter-spacing: var(--letterspacing-3);
-  margin: var(--space-1) 0;
-  font-weight: 600;
+  margin: 20px 0;
+  font-weight: 400;
   color: var(--foreground);
 }
 
@@ -80,7 +80,7 @@ h3 {
   font-size: var(--size-4);
   line-height: var(--lineheight-4);
   letter-spacing: var(--letterspacing-4);
-  margin: var(--space-1) 0;
+  margin: 20px 0;
   font-weight: 700;
   color: var(--foreground);
 }
@@ -90,7 +90,7 @@ blockquote {
   line-height: var(--lineheight-4);
   letter-spacing: var(--letterspacing-4);
   padding: 0;
-  margin: var(--space-1) 0;
+  margin: 20px 0;
   font-style: italic;
 }
 
@@ -100,7 +100,7 @@ header {
     font-size: var(--size-2);
     line-height: var(--lineheight-2);
     letter-spacing: var(--letterspacing-2);
-    font-weight: 600;
+    font-weight: 400;
   }
   img {
     height: var(--lineheight-2);
@@ -109,7 +109,7 @@ header {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 960px) {
 
   html {
     font-size: var(--size-3);
@@ -120,35 +120,35 @@ header {
     font-size: var(--size-3);
     line-height: var(--lineheight-3);
     letter-spacing: var(--letterspacing-3);
-    margin: var(--space-1) 0;
+    margin: 20px 0;
   }
   ol, ul {
     font-size: var(--size-3);
     line-height: var(--lineheight-3);
     letter-spacing: var(--letterspacing-3);
-    padding: 0 0 0 var(--space-1);
-    margin: var(--space-1) 0;
+    padding: 0 0 0 20px;
+    margin: 20px 0;
   }
   
   h1 {
     font-size: var(--size-1);
     line-height: var(--lineheight-1);
     letter-spacing: var(--letterspacing-1);
-    margin: var(--space-1) 0;
+    margin: 20px 0;
   }
   
   h2 {
     font-size: var(--size-2);
     line-height: var(--lineheight-2);
     letter-spacing: var(--letterspacing-2);
-    margin: var(--space-1) 0;
+    margin: 20px 0;
   }
   
   h3 {
     font-size: var(--size-3);
     line-height: var(--lineheight-3);
     letter-spacing: var(--letterspacing-3);
-    margin: var(--space-1) 0;
+    margin: 20px 0;
   }
   
   blockquote {
@@ -156,7 +156,7 @@ header {
     line-height: var(--lineheight-3);
     letter-spacing: var(--letterspacing-3);
     padding: 0;
-    margin: var(--space-1) 0;
+    margin: 20px 0;
   }
   
   header {

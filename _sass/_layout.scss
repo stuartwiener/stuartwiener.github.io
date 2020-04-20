@@ -1,12 +1,12 @@
 .site {
-  margin: var(--space-1) var(--space-2);
+  margin: 20px 40px;
 }
 header {
-  margin-top: 20vh;
+  margin-top: 10vw;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 720px) {
   .site {
-    margin: var(--space-2) 10vh;
+    margin: 40px 20vw 40px 10vw;
   }
 }
 
