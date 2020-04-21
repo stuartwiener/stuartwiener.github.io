@@ -1,15 +1,16 @@
 .site {
-  margin: 20px 40px;
+  margin: 40px 20px;
 }
 header {
   margin-top: 10vw;
 }
 @media screen and (min-width: 720px) {
   .site {
+    margin: 40px 10vw 40px 10vw;
+  }
+}
+@media screen and (min-width: 960px) {
+  .site {
     margin: 40px 20vw 40px 10vw;
   }
 }
-
-// @media screen and (min-width: $primary-width) {
-//
-// }
