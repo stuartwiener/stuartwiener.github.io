@@ -4,71 +4,25 @@
 @charset "utf-8";
 
 @font-face {
-  font-family: 'Inter';
-  font-style:  normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../fonts/inter/Inter-Regular.woff2?v=3.12") format("woff2"),
-       url("../fonts/inter/Inter-Regular.woff?v=3.12") format("woff");
-}
-@font-face {
-  font-family: 'Inter';
-  font-style:  italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../fonts/inter/Inter-Italic.woff2?v=3.12") format("woff2"),
-       url("../fonts/inter/Inter-Italic.woff?v=3.12") format("woff");
+  font-family: 'basiersquare';
+  src: url('../fonts/basier/basiersquare-regular.eot');
+  src: url('../fonts/basier/basiersquare-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/basier/basiersquare-regular.woff2') format('woff2'),
+       url('../fonts/basier/basiersquare-regular.woff') format('woff'),
+       url('../fonts/basier/basiersquare-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Inter';
-  font-style:  normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("../fonts/inter/Inter-Medium.woff2?v=3.12") format("woff2"),
-       url("../fonts/inter/Inter-Medium.woff?v=3.12") format("woff");
-}
-@font-face {
-  font-family: 'Inter';
-  font-style:  italic;
-  font-weight: 500;
-  font-display: swap;
-  src: url("../fonts/inter/Inter-MediumItalic.woff2?v=3.12") format("woff2"),
-       url("../fonts/inter/Inter-MediumItalic.woff?v=3.12") format("woff");
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style:  normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("../fonts/inter/Inter-SemiBold.woff2?v=3.12") format("woff2"),
-       url("../fonts/inter/Inter-SemiBold.woff?v=3.12") format("woff");
-}
-@font-face {
-  font-family: 'Inter';
-  font-style:  italic;
-  font-weight: 600;
-  font-display: swap;
-  src: url("../fonts/inter/Inter-SemiBoldItalic.woff2?v=3.12") format("woff2"),
-       url("../fonts/inter/Inter-SemiBoldItalic.woff?v=3.12") format("woff");
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style:  normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("../fonts/inter/Inter-Bold.woff2?v=3.12") format("woff2"),
-       url("../fonts/inter/Inter-Bold.woff?v=3.12") format("woff");
-}
-@font-face {
-  font-family: 'Inter';
-  font-style:  italic;
-  font-weight: 700;
-  font-display: swap;
-  src: url("../fonts/inter/Inter-BoldItalic.woff2?v=3.12") format("woff2"),
-       url("../fonts/inter/Inter-BoldItalic.woff?v=3.12") format("woff");
+  font-family: 'basiercircle';
+  src: url('../fonts/basier/basiercircle-regular.eot');
+  src: url('../fonts/basier/basiercircle-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/basier/basiercircle-regular.woff2') format('woff2'),
+       url('../fonts/basier/basiercircle-regular.woff') format('woff'),
+       url('../fonts/basier/basiercircle-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 :root {
@@ -88,12 +42,12 @@
   --lineheight-3: 28px;
   --lineheight-4: 24px;
 
-  --letterspacing-1: -0.022em;
-  --letterspacing-2: -0.022em;
-  --letterspacing-3: -0.021em;
-  --letterspacing-4: -0.019em;
+  --letterspacing-1: -0.015em;
+  --letterspacing-2: -0.015em;
+  --letterspacing-3: -0.015em;
+  --letterspacing-4: -0.01em;
 
-  --sans-serif: 'Inter', sans-serif;
+  --sans-serif: 'basiersquare', sans-serif;
 
   background: var(--background-1-color);
 }

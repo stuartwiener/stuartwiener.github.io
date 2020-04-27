@@ -28,6 +28,7 @@ a {
   text-decoration: underline;
   text-decoration-color: var(--color-1);
   text-decoration-skip: ink;
+  text-decoration-thickness: 2px;
   cursor: pointer;
 }
 a:hover {
@@ -81,7 +82,7 @@ h3 {
   line-height: var(--lineheight-4);
   letter-spacing: var(--letterspacing-4);
   margin: 20px 0;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--foreground);
 }
 
