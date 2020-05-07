@@ -96,7 +96,7 @@ blockquote {
 }
 
 header {
-  h1, img, p{
+  h1, p{
     display: inline;
     font-size: var(--size-2);
     line-height: var(--lineheight-2);
@@ -104,9 +104,10 @@ header {
     font-weight: 400;
   }
   img {
-    height: var(--lineheight-2);
+    display: block;
+    height: 80px;
     border-radius: 50%;
-    vertical-align: bottom;
+    margin-bottom: 20px;
   }
 }
 
@@ -161,14 +162,15 @@ header {
   }
   
   header {
-    h1, img, p{
+    h1, p{
       font-size: var(--size-1);
       line-height: var(--lineheight-1);
       letter-spacing: var(--letterspacing-1);
     }
     img {
-      height: var(--lineheight-1);
+      height: 110px;
       vertical-align: bottom;
+      margin-bottom: 20px;
     }
   }
 }
