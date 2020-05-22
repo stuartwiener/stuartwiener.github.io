@@ -5,28 +5,66 @@
 
 @font-face {
   font-family: 'basiersquare';
-  src: url('../fonts/basier/basiersquare-regular.eot');
-  src: url('../fonts/basier/basiersquare-regular.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/basier/basiersquare-regular.woff2') format('woff2'),
-       url('../fonts/basier/basiersquare-regular.woff') format('woff'),
-       url('../fonts/basier/basiersquare-regular.ttf') format('truetype');
+  src: url('../fonts/basier/basiersquare-regular-webfont.eot');
+  src: url('../fonts/basier/basiersquare-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/basier/basiersquare-regular-webfont.woff2') format('woff2'),
+       url('../fonts/basier/basiersquare-regular-webfont.woff') format('woff'),
+       url('../fonts/basier/basiersquare-regular-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'basiercircle';
-  src: url('../fonts/basier/basiercircle-regular.eot');
-  src: url('../fonts/basier/basiercircle-regular.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/basier/basiercircle-regular.woff2') format('woff2'),
-       url('../fonts/basier/basiercircle-regular.woff') format('woff'),
-       url('../fonts/basier/basiercircle-regular.ttf') format('truetype');
+  font-family: 'basiersquare';
+  src: url('../fonts/basier/basiersquare-regularitalic-webfont.eot');
+  src: url('../fonts/basier/basiersquare-regularitalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/basier/basiersquare-regularitalic-webfont.woff2') format('woff2'),
+       url('../fonts/basier/basiersquare-regularitalic-webfont.woff') format('woff'),
+       url('../fonts/basier/basiersquare-regularitalic-webfont.ttf') format('truetype');
   font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'basiersquare';
+  src: url('../fonts/basier/basiersquare-medium-webfont.eot');
+  src: url('../fonts/basier/basiersquare-medium-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/basier/basiersquare-medium-webfont.woff2') format('woff2'),
+       url('../fonts/basier/basiersquare-medium-webfont.woff') format('woff'),
+       url('../fonts/basier/basiersquare-medium-webfont.ttf') format('truetype');
+  font-weight: 500;
   font-style: normal;
+}
+@font-face {
+  font-family: 'basiersquare';
+  src: url('../fonts/basier/basiersquare-mediumitalic-webfont.eot');
+  src: url('../fonts/basier/basiersquare-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/basier/basiersquare-mediumitalic-webfont.woff2') format('woff2'),
+       url('../fonts/basier/basiersquare-mediumitalic-webfont.woff') format('woff'),
+       url('../fonts/basier/basiersquare-mediumitalic-webfont.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'basiersquare';
+  src: url('../fonts/basier/basiersquare-bold-webfont.eot');
+  src: url('../fonts/basier/basiersquare-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/basier/basiersquare-bold-webfont.woff2') format('woff2'),
+       url('../fonts/basier/basiersquare-bold-webfont.woff') format('woff'),
+       url('../fonts/basier/basiersquare-bold-webfont.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'basiersquare';
+  src: url('../fonts/basier/basiersquare-bolditalic-webfont.eot');
+  src: url('../fonts/basier/basiersquare-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/basier/basiersquare-bolditalic-webfont.woff2') format('woff2'),
+       url('../fonts/basier/basiersquare-bolditalic-webfont.woff') format('woff'),
+       url('../fonts/basier/basiersquare-bolditalic-webfont.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
 }
 
 :root {
-
   --background: #FBFCFC;
   --foreground: #111111;
   --color-1: #D11600;

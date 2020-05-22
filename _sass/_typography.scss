@@ -25,11 +25,22 @@ html {
 }
 a {
   color: var(--foreground);
-  text-decoration: underline;
-  text-decoration-color: var(--color-1);
-  text-decoration-skip: ink;
-  text-decoration-thickness: 2px;
+  text-decoration: none;
+  position: relative;
+  // border-bottom: 1.5px solid var(--color-1);
+  // text-decoration-color: var(--color-1);
+  // text-decoration-skip: ink;
+  // text-decoration-thickness: 1px;
   cursor: pointer;
+}
+a::after {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 86%;
+  left: 0;
+  top: 0;
+  border-bottom: 2px solid var(--color-1);
 }
 a:hover {
   color: var(--color-1);
@@ -64,7 +75,7 @@ h1 {
   line-height: var(--lineheight-2);
   letter-spacing: var(--letterspacing-2);
   margin: 20px 0;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--foreground);
 }
 
@@ -73,7 +84,7 @@ h2 {
   line-height: var(--lineheight-3);
   letter-spacing: var(--letterspacing-3);
   margin: 20px 0;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--foreground);
 }
 
@@ -82,7 +93,7 @@ h3 {
   line-height: var(--lineheight-4);
   letter-spacing: var(--letterspacing-4);
   margin: 20px 0;
-  font-weight: 400;
+  font-weight: 700;
   color: var(--foreground);
 }
 
