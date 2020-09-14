@@ -27,10 +27,7 @@ a {
   color: var(--foreground);
   text-decoration: underline;
   position: relative;
-  // border-bottom: 1.5px solid var(--color-1);
   text-decoration-color: var(--color-1);
-  text-decoration-skip: ink;
-  text-decoration-thickness: 1px;
   cursor: pointer;
 }
 a:hover {
