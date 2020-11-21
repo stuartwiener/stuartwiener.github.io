@@ -64,31 +64,14 @@
   font-style: italic;
 }
 
-:root {
-  --background: #FBFCFC;
-  --foreground: #111111;
-  --color-1: #D11600;
-  --color-2: #E6CBC8;
-
-  --size-1: 40px;
-  --size-2: 22px;
-  --size-3: 18px;
-  --size-4: 16px;
-
-  --lineheight-1: 55px;
-  --lineheight-2: 30px;
-  --lineheight-3: 24px;
-  --lineheight-4: 22px;
-
-  --letterspacing-1: -0.015em;
-  --letterspacing-2: -0.015em;
-  --letterspacing-3: -0.015em;
-  --letterspacing-4: -0.01em;
-
-  --sans-serif: 'basiersquare', sans-serif;
-
-  background: var(--background-1-color);
-}
+  :root {
+    --background: #FAFAFA;
+    --elevated-bg: #FFFFFF;
+    --primary: #111111;
+    --secondary: #222222;
+    --tertiary: #666666;
+    --color-1: #2383F4;
+  }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

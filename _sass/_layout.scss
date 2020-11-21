@@ -1,16 +1,24 @@
+html, body {
+  background: var(--background);
+}
 .site {
-  margin: 40px 20px;
+  margin: 0;
+  padding: 40px 20px 40px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background: var(--elevated-bg);
 }
-header {
-  margin-top: 10vw;
-}
+
 @media screen and (min-width: 720px) {
   .site {
-    margin: 40px 10vw 40px 10vw;
+    margin: 0 4vw;
+    padding: 4vw 4vw 40px 4vw;
   }
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1280px) {
   .site {
-    margin: 40px 20vw 40px 10vw;
+    margin: 0 10vw;
+    padding: 5vw 6vw 40px 6vw;
+    max-width: 1440px;
   }
 }
