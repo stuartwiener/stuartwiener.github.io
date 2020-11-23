@@ -16,35 +16,27 @@ html {
 }
 
 ::-moz-selection {
-  color: var(--primary);
+  color: var(--background);
   background: var(--color-1);
   text-shadow: none;
 }
 ::selection {
-  color: var(--primary);
+  color: var(--background);
   background: var(--color-1);
   text-shadow: none;
 }
+
 a {
   color: var(--color-1);
-  text-decoration: none;
-  background-size: 1px 1em;
-  box-shadow:
-    inset 0 -0.16em var(--background),
-    inset 0 -0.2em var(--color-1);
-  display: inline;
-  text-shadow:
-    -2px -2px var(--background),
-    -2px 2px var(--background),
-    2px -2px var(--background),
-    2px 2px var(--background);
+  text-decoration: underline;
   cursor: pointer;
 }
 a:hover {
   color: var(--primary);
-  box-shadow:
-    inset 0 -0.16em var(--background),
-    inset 0 -0.2em var(--primary);
+}
+
+em  {
+  font-style: italic;
 }
 strong {
   font-weight: 700;
@@ -68,11 +60,6 @@ ol, ul {
   letter-spacing: -0.01em;
   padding: 0 0 0 20px;
   margin: 20px 0;
-}
-
-.content {
-  column-count: 2;
-  column-gap: 80px;
 }
 
 .title, h1 {
@@ -114,24 +101,22 @@ blockquote {
   margin: 20px 0;
 }
 
-header {
-  h1, p{
-    display: inline;
-    font-size: 38px;
-    line-height: 50px;
-    letter-spacing: -0.015em;
-    font-weight: 500;
-    color: var(--primary);
-  }
-  img {
-    display: block;
-    height: 110px;
-    border-radius: 50%;
-    margin-bottom: 40px;
-  }
+img.profilepic {
+  display: block;
+  height: 110px;
+  border-radius: 50%;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 960px) {
+  .content {
+    column-count: 2;
+    column-gap: 80px;
+
+    p:first-child {
+      margin-top: 0;
+    }
+  }
   
 }
 
