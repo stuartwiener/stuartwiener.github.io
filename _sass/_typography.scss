@@ -114,7 +114,7 @@ img.profilepic {
 @media screen and (min-width: 960px) {
   .content {
     column-count: 2;
-    column-gap: 80px;
+    column-gap: 40px;
 
     p:first-child {
       margin-top: 0;
@@ -124,5 +124,7 @@ img.profilepic {
 }
 
 @media screen and (min-width: 1280px) {
-  
+  .content {
+    column-gap: 60px;
+  }
 }
