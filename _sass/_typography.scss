@@ -7,6 +7,7 @@ html {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
+  letter-spacing: -0.01em;
   color: var(--secondary);
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -48,7 +49,6 @@ strong {
 p {
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: -0.01em;
   margin: 20px 0;
 }
 img {
@@ -64,36 +64,77 @@ ol, ul {
   padding: 0 0 0 20px;
   margin: 20px 0;
 }
+.sidebar {
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--tertiary);
+}
 
 .title, h1 {
-  font-size: 38px;
-  line-height: 50px;
-  letter-spacing: -0.015em;
-  font-weight: 500;
-  margin: 40px 0 20px;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  margin: 72px 0 9px;
   color: var(--primary);
 }
 
 .heading, h2 {
-  font-size: 26px;
-  line-height: 30px;
-  letter-spacing: -0.015em;
-  font-weight: 400;
-  margin: 20px 0;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  margin: 72px 0 9px;
   color: var(--primary);
 }
 
 .subheading, h3 {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 24px;
-  letter-spacing: -0.01em;
-  font-weight: 400;
-  margin: 20px 0;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 72px 0 9px;
   color: var(--primary);
 }
 
-.dim {
-  font-weight: 400;
+h4 {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  margin: 9px 0 28px;
+  color: var(--secondary);
+}
+
+@media screen and (min-width: 960px) {
+  .title, h1 {
+    font-size: 38px;
+    line-height: 50px;
+    letter-spacing: -0.01em;
+    margin: 72px 0 12px;
+  }
+
+  .heading, h2 {
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+    margin: 72px 0 12px;
+  }
+
+  .subheading, h3 {
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    margin: 72px 0 12px;
+  }
+
+  h4 {
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: -0.005em;
+    margin: 12px 0 28px;
+  }
 }
 
 blockquote {
@@ -102,29 +143,4 @@ blockquote {
   letter-spacing: -0.01em;
   padding: 0;
   margin: 20px 0;
-}
-
-img.profilepic {
-  display: block;
-  height: 110px;
-  border-radius: 50%;
-  margin-bottom: 40px;
-}
-
-@media screen and (min-width: 960px) {
-  .content {
-    column-count: 2;
-    column-gap: 40px;
-
-    p:first-child {
-      margin-top: 0;
-    }
-  }
-  
-}
-
-@media screen and (min-width: 1280px) {
-  .content {
-    column-gap: 60px;
-  }
 }

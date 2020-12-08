@@ -19,6 +19,137 @@ html, body {
   .site {
     margin: 0 10vw;
     padding: 5vw 6vw 40px 6vw;
-    max-width: 1440px;
+    max-width: 1280px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .site {
+    margin: 0 auto;
+    padding: 5vw 6vw 40px 6vw;
+    max-width: 1280px;
+  }
+}
+
+img.profilepic {
+  display: block;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+
+.experience {
+  .header {
+    position: relative;
+    display: flex;
+    
+    margin-top: 72px; /* to match typography */
+    
+    h1 {
+      margin-top: 0;
+    }
+    h2 {
+      margin-top: 36px;
+    }
+
+    img {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      margin-top: 8px;
+      margin-right: 20px;
+    }
+  }
+}
+
+.content {
+  p:first-child {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .experience {
+    .header {
+      position: relative;
+      display: flex;
+  
+      img {
+        width: 64px;
+        height: 64px;
+      }
+    }
+  }
+  .content {
+    column-count: 2;
+    column-gap: 40px;
+  }
+  .content.content--single {
+    column-count: 1;
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .experience {
+    .header {
+      margin-left: -100px;
+      
+      img {
+        width: 72px;
+        height: 72px;
+        margin-right: 28px;
+      }
+    }
+  }
+  .content {
+    column-gap: 60px;
+  }
+  .content.content--single {
+    width: calc(50% - 30px);
+  }
+}
+
+.talk {
+  margin: 72px 0;
+
+  img {
+    width: 100%;
+    height: 56.25%;
+    border-radius: 6px;
+    margin-right: 20px;
+  }
+  h2 {
+    margin-top: 9px;
+  }
+  p {
+
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .talk {
+    display: flex;
+  
+    img {
+      width: 40%;
+      height: 56.25%;
+      border-radius: 6px;
+      margin-right: 20px;
+    }
+    h2 {
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .talk {
+
+    img {
+      width: 320px;
+      height: 180px;
+      margin-right: 28px;;
+    }
   }
 }
