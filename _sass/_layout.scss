@@ -84,6 +84,8 @@ img.profilepic {
   .content {
     column-count: 2;
     column-gap: 40px;
+    widows: 3; 
+    orphans: 3;
   }
   .content.content--single {
     column-count: 1;
