@@ -54,7 +54,7 @@ p {
 img {
   max-width: 100%;
   height: auto;
-  margin: 0;
+  margin: 10px 0;
   padding: 0;
 }
 ol, ul {
@@ -73,7 +73,7 @@ ol, ul {
 .navigation 
   {
     list-style: none;
-    padding: 0;
+    // padding: 0;
     a {
       font-size: 15px;
       line-height: 22px;
@@ -93,6 +93,11 @@ ol, ul {
       left: -18px;
       top: 0;
     }
+}
+@media screen and (min-width: 720px) {
+  .navigation {
+    padding: 0;
+  }
 }
 
 .title, h1 {
