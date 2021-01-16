@@ -70,6 +70,32 @@ ol, ul {
   color: var(--tertiary);
 }
 
+.navigation 
+  {
+    list-style: none;
+    padding: 0;
+    a {
+      font-size: 15px;
+      line-height: 22px;
+      color: var(--tertiary);
+      text-decoration: none;
+    }
+    a:hover {
+      color: var(--primary);
+    }
+    .active {
+      position: relative;
+      color: var(--primary);
+    }
+    .active::before {
+      content: '→';
+      position: absolute;
+      left: -20px;
+      top: 0;
+    }
+}
+
+
 .title, h1 {
   font-size: 28px;
   line-height: 36px;
