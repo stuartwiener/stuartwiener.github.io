@@ -34,11 +34,13 @@ html, body {
   p, ol, ul {
     max-width: 740px;
   }
+  img {
+    margin: 10px 0;
+  }
   img.narrow {
     max-width: 740px;
     width: 100%;
     height: auto;
-    margin: 10px 0;
   }
   .longform__container {
     max-width: 740px;
