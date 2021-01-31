@@ -117,14 +117,7 @@ img.profilepic {
     }
   }
   .content {
-    column-count: 2;
-    column-gap: 40px;
-    widows: 3; 
-    orphans: 3;
-  }
-  .content.content--single {
-    column-count: 1;
-    width: calc(50% - 20px);
+    max-width: 740px;
   }
 }
 
@@ -139,12 +132,6 @@ img.profilepic {
         margin-right: 28px;
       }
     }
-  }
-  .content {
-    column-gap: 60px;
-  }
-  .content.content--single {
-    width: calc(50% - 30px);
   }
 }
 
@@ -183,6 +170,7 @@ img.profilepic {
 
 @media screen and (min-width: 720px) {
   .talk {
+    max-width: 740px;
 
     img {
       width: 320px;

@@ -137,6 +137,10 @@ h4 {
   color: var(--secondary);
 }
 
+.spacer {
+  margin-top: 72px;
+}
+
 @media screen and (min-width: 960px) {
   .title, h1 {
     font-size: 38px;
