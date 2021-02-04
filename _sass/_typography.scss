@@ -20,12 +20,12 @@ html {
 }
 
 ::-moz-selection {
-  color: var(--background);
+  color: var(--primary);
   background: var(--color-1);
   text-shadow: none;
 }
 ::selection {
-  color: var(--background);
+  color: var(--primary);
   background: var(--color-1);
   text-shadow: none;
 }
