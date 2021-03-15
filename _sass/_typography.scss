@@ -3,11 +3,11 @@
  */
 
 html {
-  font-family: 'basiersquare', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.005em;
   color: var(--secondary);
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -20,12 +20,12 @@ html {
 }
 
 ::-moz-selection {
-  color: var(--primary);
+  color: var(--background);
   background: var(--color-1);
   text-shadow: none;
 }
 ::selection {
-  color: var(--primary);
+  color: var(--background);
   background: var(--color-1);
   text-shadow: none;
 }
@@ -104,36 +104,40 @@ ol, ul {
   font-size: 28px;
   line-height: 36px;
   letter-spacing: -0.01em;
-  font-weight: 600;
-  margin: 72px 0 9px;
+  font-weight: 700;
+  margin: 60px 0 10px;
   color: var(--primary);
+}
+
+.site-header h1 {
+  margin: 0;
+  text-align: right;
 }
 
 .heading, h2 {
   font-size: 22px;
   line-height: 28px;
   letter-spacing: -0.01em;
-  font-weight: 600;
-  margin: 72px 0 9px;
+  font-weight: 700;
+  margin: 60px 0 10px;
   color: var(--primary);
 }
 
 .subheading, h3 {
   font-size: 20px;
   line-height: 24px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin: 72px 0 9px;
-  color: var(--primary);
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  margin: 60px 0 10px;
+  color: var(--secondary);
 }
 
 h4 {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: -0.01em;
-  font-weight: 500;
-  margin: 9px 0 28px;
+  font-weight: 600;
+  margin: 10px 0 20px;
   color: var(--secondary);
 }
 
@@ -146,28 +150,28 @@ h4 {
     font-size: 38px;
     line-height: 50px;
     letter-spacing: -0.01em;
-    margin: 72px 0 12px;
+    margin: 60px 0 10px;
   }
 
   .heading, h2 {
     font-size: 26px;
     line-height: 30px;
     letter-spacing: -0.01em;
-    margin: 72px 0 12px;
+    margin: 60px 0 10px;
   }
 
   .subheading, h3 {
     font-size: 22px;
     line-height: 24px;
-    letter-spacing: 0.05em;
-    margin: 72px 0 12px;
+    letter-spacing: -0.01em;
+    margin: 60px 0 10px;
   }
 
   h4 {
-    font-size: 22px;
+    font-size: 18px;
     line-height: 24px;
     letter-spacing: -0.005em;
-    margin: 12px 0 28px;
+    margin: 10px 0 30px;
   }
 }
 
