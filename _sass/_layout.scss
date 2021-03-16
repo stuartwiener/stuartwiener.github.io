@@ -79,6 +79,13 @@ img.profilepic {
   border-bottom: none !important;
 }
 
+@media screen and (min-width: 960px) {
+  img.profilepic {
+    width: 220px;
+    height: 220px;
+  }
+}
+
 .experience {
   .header {
     position: relative;
