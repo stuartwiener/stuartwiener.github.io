@@ -10,7 +10,7 @@
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <!-- <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}"> -->
@@ -18,11 +18,9 @@
 
   <body>
 
-    <div class="site">
+    <div class="site {{ page.class }}">
 
       <div class="site-header">
-        
-        {% if page.title %}<h1>{{ page.title | escape }}</h1>{% endif %}
 
       </div>
 
@@ -30,9 +28,18 @@
         
         {{ content }}
 
+        <ul class="navigation">
+          <li><span>📄</span> Read more about my <a href="{% link experience.html %}">professional experience</a></li>
+          <li><span>👀</span> Have a look at some of my <a href="{% link index.html %}">recent work</a></li>
+          <li><span>🖌</span> <a onclick="window.location.href='mailto:hello'+'@'+'stuartwiener.com';">Email me</a> if you would like to get in touch</li>
+          <li><span>🐦</span> Say hi <a href="https://twitter.com/stuartwiener">on Twitter</a></li>
+        </ul>
+
       </div>
 
       <div class="site-footer">
+
+        
 
       </div>
       

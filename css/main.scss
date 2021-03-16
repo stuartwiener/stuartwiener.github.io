@@ -4,12 +4,14 @@
 @charset "utf-8";
 
 :root {
-  --background: #FFFFFF;
-  --elevated-bg: #F8F9FC;
-  --primary: #000;
-  --secondary: #333;
-  --tertiary: #838996;
-  --color-1: #00755E;
+  --background: #000000;
+  // --elevated-bg: #F4F0EC;
+  --primary: #FFFFFF;
+  --secondary: #ccccca;
+  --tertiary: #7d7b78;
+  --quarternary: #353432;
+  --color-2: #FF7A00;
+  --color-1: #FF9933;
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
