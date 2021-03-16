@@ -51,24 +51,24 @@ strong {
 p {
   font-size: 18px;
   line-height: 24px;
+  letter-spacing: -0.005em;
   margin: 20px 0;
 }
 img {
   max-width: 100%;
-  // max-width: calc(100% + 80px);
   height: auto;
   margin: 0;
   padding: 0;
 }
-img.feature {
-  max-width: calc(200% + 160px);
-}
 ol, ul {
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.005em;
   padding: 0 0 0 20px;
   margin: 20px 0;
+  li {
+    margin: 20px 0;
+  }
 }
 .subtext {
   font-size: 15px;
@@ -123,14 +123,19 @@ h4 {
   color: var(--primary);
 }
 
-.spacer {
-  margin-top: 72px;
+.space {
+  margin-top: 100px;
 }
 
 @media screen and (min-width: 960px) {
+  p, ol, ul {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
   .supertext {
     font-size: 24px;
-    line-height: 28px;
+    line-height: 32px;
   }
 
   .title, h1 {
@@ -141,8 +146,8 @@ h4 {
   }
 
   .heading, h2 {
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 28px;
+    line-height: 32px;
     letter-spacing: -0.01em;
     margin: 60px 0 10px;
   }

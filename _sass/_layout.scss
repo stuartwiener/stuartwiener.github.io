@@ -91,7 +91,7 @@ img.profilepic {
     position: relative;
     display: flex;
     
-    margin-top: 60px; /* to match typography */
+    margin-top: 100px; /* to match typography */
     
     h2 {
       margin-top: 7px;
@@ -101,15 +101,16 @@ img.profilepic {
     }
 
     img {
-      width: 54px;
-      height: 54px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
       margin-top: 8px;
-      margin-right: 16px;
+      margin-right: 20px;
     }
   }
   .content {
-    p:first-child {
+    p:first-child,
+    ul:first-child {
       margin-top: 0;
     }
   }
@@ -152,7 +153,7 @@ img.profilepic {
     display: flex;
   
     img {
-      width: 40%;
+      width: 35%;
       height: 56.25%;
       border-radius: 6px;
       margin-right: 20px;
@@ -163,31 +164,20 @@ img.profilepic {
   }
 }
 
-@media screen and (min-width: 720px) {
-  .talk {
-    // max-width: 740px;
-
-    img {
-      width: 320px;
-      height: 180px;
-      margin-right: 28px;;
-    }
-  }
-}
-
 ul.navigation {
     list-style: none;
     padding:0;
     margin-top: 80px;
 
     li {
-      border-top: 1px solid var(--quarternary);
+      border-top: 1px solid var(--tertiary);
       padding: 10px 0;
+      margin: 0;
       span {
         margin-right: 10px;
       }
     }
     li:last-child {
-      border-bottom: 1px solid var(--quarternary);
+      border-bottom: 1px solid var(--tertiary);
     }
   }
