@@ -13,12 +13,12 @@ html, body {
     max-width: 840px;
   }
   .site-gallery-content {
-    width: 100%;
     box-sizing: border-box;
   }
   .site-gallery-description {
     padding: 20px;
     box-sizing: border-box;
+    max-width: 840px;
   }
   .site-footer {
     height: 120px;
@@ -49,17 +49,20 @@ html, body {
 
 @media screen and (min-width: 1280px) {
   .site {
-    display: flex;
-
     .site-content {
       width: 50%;
       padding-right: 0;
     }
     .site-gallery-content {
-      width: calc(50% + 80px);
+      margin-left: calc(50% - 80px);
     }
     .site-gallery-description {
       width: calc(50% - 80px);
+      position: fixed;
+      top: 0;
+      left: 0;
+      max-height: 100vh;
+      overflow-y: auto;
     }
   }
 }
@@ -70,7 +73,7 @@ html, body {
       padding: 120px 0 120px 160px;
     }
     .site-gallery-content {
-      width: calc(50% + 160px);
+      margin-left: calc(50% - 160px);
     }
     .site-gallery-description {
       width: calc(50% - 160px);
