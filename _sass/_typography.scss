@@ -128,6 +128,15 @@ h4 {
   margin-top: 100px;
 }
 
+a.button {
+  border-top: 1px solid var(--tertiary);
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+a.button:hover {
+  background: var(--tertiary);
+}
+
 @media screen and (min-width: 960px) {
   p, ol, ul {
     font-size: 20px;

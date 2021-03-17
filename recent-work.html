@@ -1,0 +1,15 @@
+---
+layout: default
+published: true
+title: Recent Work
+---
+
+<h1>Recent Work</h1>
+
+{% for item in site.work %}
+  <h2>
+      {{ item.title }}
+  </h2>
+
+  {{ item.url }}
+{% endfor %}

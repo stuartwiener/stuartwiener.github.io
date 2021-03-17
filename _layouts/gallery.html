@@ -7,19 +7,24 @@
 
     <div class="site">
 
-      <div class="site-gallery-content">
+        <div class="site-gallery-description">
+
+            <h1>{{ page.title }}</h1>
+            
+            {{ page.description }}
+
+            <div class="buttons">
+                <a href="">← Prev</a>
+                <a href="">Next →</a>
+            </div>
+    
+        </div>
+
+        <div class="site-gallery-content">
         
-        {{ content }}
+            {{ content }}
 
-      </div>
-
-      <div class="site-gallery-description">
-
-        <h1>{{ page.title }}</h1>
-        
-        {{ page.description }}
-
-      </div>
+        </div>
 
     </div>
 

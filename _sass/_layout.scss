@@ -5,17 +5,20 @@ html, body {
 
 .site {
   width: 100%;
+  position: relative;
 
-  .site-header {
-    // background: var(--tertiary);
-    padding:  0;
-    box-sizing: border-box;
-  }
   .site-content {
     padding:  20px;
     box-sizing: border-box;
     max-width: 840px;
-    // margin: 0 auto;
+  }
+  .site-gallery-content {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .site-gallery-description {
+    padding: 20px;
+    box-sizing: border-box;
   }
   .site-footer {
     height: 120px;
@@ -27,6 +30,9 @@ html, body {
     .site-content {
       padding: 40px;
     }
+    .site-gallery-description {
+      padding: 40px;
+    }
   }
 }
 
@@ -35,14 +41,25 @@ html, body {
     .site-content {
       padding: 80px;
     }
+    .site-gallery-description {
+      padding: 80px;
+    }
   }
 }
 
 @media screen and (min-width: 1280px) {
   .site {
+    display: flex;
+
     .site-content {
       width: 50%;
       padding-right: 0;
+    }
+    .site-gallery-content {
+      width: calc(50% + 80px);
+    }
+    .site-gallery-description {
+      width: calc(50% - 80px);
     }
   }
 }
@@ -51,6 +68,12 @@ html, body {
   .site {
     .site-content {
       padding: 120px 0 120px 160px;
+    }
+    .site-gallery-content {
+      width: calc(50% + 160px);
+    }
+    .site-gallery-description {
+      width: calc(50% - 160px);
     }
   }
 }

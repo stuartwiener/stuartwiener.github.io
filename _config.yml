@@ -7,15 +7,13 @@
 
 # Site settings
 title: Stuart Wiener
-description: Product designer and design thinker living and working in Johannesburg, South Africa.
+description: Design leader living and working in Johannesburg, South Africa.
 email: hello@stuartwiener.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://stuartwiener.com" # the base hostname & protocol for your site
-twitter_username: stuartwiener
-facebook_username: stuartwiener
-github_username: stuartwiener
-instagram_username: stuartwiener
-linkedin_username: stuartwiener
+collections: 
+  work: 
+    output: true
 
 # Build settings
 markdown: kramdown
