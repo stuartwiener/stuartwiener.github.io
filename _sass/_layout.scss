@@ -50,7 +50,7 @@ html, body {
 @media screen and (min-width: 1440px) {
   .site {
     .site-content {
-      padding: 160px 0 160px 160px;
+      padding: 120px 0 120px 160px;
     }
   }
 }
@@ -140,8 +140,8 @@ img.profilepic {
     border-radius: 6px;
     margin-right: 20px;
   }
-  h2 {
-    margin-top: 9px;
+  h3 {
+    margin-top: 0;
   }
   p {
 
@@ -157,9 +157,6 @@ img.profilepic {
       height: 56.25%;
       border-radius: 6px;
       margin-right: 20px;
-    }
-    h2 {
-      margin-top: 0;
     }
   }
 }
