@@ -8,7 +8,7 @@ html {
   line-height: 24px;
   font-weight: 400;
   letter-spacing: -0.005em;
-  color: var(--primary);
+  color: var(--secondary);
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -39,15 +39,6 @@ a {
 a:hover {
   color: var(--color-2);
   border-bottom: 1px solid var(--color-2);
-}
-a.button {
-  display: inline-block;
-  border: 1px solid var(--tertiary);
-  padding: 10px 20px;
-  border-radius: 6px;
-}
-a.button:hover {
-  background: var(--tertiary);
 }
 
 em  {
@@ -88,7 +79,7 @@ ol, ul {
 .supertext {
   font-size: 20px;
   line-height: 26px;
-  color: var(--primary);
+  color: var(--secondary);
   font-weight: 500;
 }
 
