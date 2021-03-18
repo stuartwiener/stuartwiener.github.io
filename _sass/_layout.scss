@@ -8,7 +8,7 @@ html, body {
   position: relative;
 
   .site-content {
-    padding:  20px;
+    padding:  20px 20px 160px 20px;
     box-sizing: border-box;
     max-width: 840px;
   }
@@ -26,15 +26,12 @@ html, body {
     left: 0;
     width: 100%;
   }
-  .site-footer {
-    height: 120px;
-  }
 }
 
 @media screen and (min-width: 560px) {
   .site {
     .site-content {
-      padding: 40px;
+      padding: 40px 40px 160px 40px;
     }
     .site-gallery-description {
       padding: 40px;
@@ -45,7 +42,7 @@ html, body {
 @media screen and (min-width: 960px) {
   .site {
     .site-content {
-      padding: 80px;
+      padding: 80px 80px 160px 80px;
     }
     .site-gallery-description {
       padding: 80px;
@@ -81,7 +78,7 @@ html, body {
 @media screen and (min-width: 1440px) {
   .site {
     .site-content {
-      padding: 120px 0 120px 160px;
+      padding: 120px 0 160px 160px;
     }
     .site-gallery-content {
       margin-left: calc(50% - 160px);
