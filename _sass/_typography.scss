@@ -71,6 +71,15 @@ ol, ul {
     margin: 20px 0;
   }
 }
+
+hr {
+  border: none;
+  border-top: 1px solid var(--quaternary);
+  margin: 40px 0 20px;
+  padding: 0;
+  width: 100%;
+}
+
 .subtext {
   font-size: 15px;
   line-height: 22px;
@@ -79,8 +88,8 @@ ol, ul {
 .supertext {
   font-size: 20px;
   line-height: 26px;
-  color: var(--secondary);
-  font-weight: 500;
+  color: var(--primary);
+  font-weight: 400;
 }
 
 .title, h1 {
@@ -115,7 +124,7 @@ ol, ul {
   color: var(--primary);
 }
 
-h4 {
+.headline, h4 {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: -0.01em;

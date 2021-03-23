@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html>
+    <head>
 
-  {% include head.html %}
+        {% include head.html %}
 
-  <body>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
-    <div class="site">
+    </head>
 
-        <div class="site-gallery-description">
+    <body>
 
-            <h1>{{ page.title }}</h1>
-            
-            <p>{{ page.description }}</p>
-    
-        </div>
+        <div class="site">
 
-        <div class="site-gallery-content">
-        
-            {{ content }}
+            {% include header.html class="site-header--wide" %}
 
-        </div>
+            <div class="site-gallery">
 
-        <div class="site-gallery-buttons">
-            <div class="buttons">
-                <a href="{% link index.html %}">&larr; Prev</a>
-                <a href="{% link index.html %}">Next &rarr;</a>
+                {{ content }}
+
+                <div class="gallery js-flickity" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true }'>
+                    {% for item in site.work %}
+                    <div class="gallery-item">
+                        <div class="gallery-item-image" style="background-image: url('{{ site.url }}/images/{{ item.thumbnail }}');"></div>
+                        <div class="gallery-item-content">
+                            <h2 class="subheading">{{ item.title }}</h2>
+                            <p class="subtext">{{ item.description }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+
             </div>
+
         </div>
 
-    </div>
+        {% include footer.html %}
 
-    {% include footer.html %}
-
-  </body>
+    </body>
 
 </html>
