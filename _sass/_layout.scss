@@ -68,6 +68,10 @@ html, body {
     .site-header {
       padding: 20px 40px 0;
     }
+    .site-header.site-header--wide {
+      width: auto;
+      max-width: none;
+    }
     .site-content {
       padding: 40px 40px 160px 40px;
     }
@@ -98,9 +102,7 @@ html, body {
       padding-right: 0;
     }
     .site-header.site-header--wide {
-      width: auto;
       padding-right: 80px;
-      max-width: none;
     }
     .site-content {
       width: 50%;
@@ -255,7 +257,7 @@ ul.navigation {
     position: relative;
 
     .gallery-item-image {
-      height: calc(100vh - 80px - 120px);
+      height: calc(100vh - 45px - 80px - 120px);
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -282,7 +284,7 @@ ul.navigation {
   .gallery {
     .gallery-item {
       .gallery-item-image {
-        height: calc(100vh - 160px - 120px);
+        height: calc(100vh - 65px - 160px - 120px);
         margin-bottom: 120px;
       }
       .gallery-item-content {
@@ -292,6 +294,16 @@ ul.navigation {
 
     .flickity-prev-next-button {
       background: var(--elevated-bg);
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .gallery {
+    .gallery-item {
+      .gallery-item-image {
+        height: calc(100vh - 89px - 160px - 120px);
+      }
     }
   }
 }
