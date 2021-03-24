@@ -19,7 +19,8 @@
 
                 {{ content }}
 
-                <div class="gallery js-flickity" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true }'>
+                <div class="gallery js-flickity" 
+                    data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "arrowShape": "M45 16 51 23 29 45 89 45 89 55 29 55 51 77 45 84 11 50z" }'>
                     {% for item in site.work %}
                     <div class="gallery-item">
                         <div class="gallery-item-image" style="background-image: url('{{ site.url }}/images/{{ item.thumbnail }}');"></div>
