@@ -22,7 +22,7 @@ html, body {
       display: flex;
       width: 100%;
       
-      border-bottom: 1px solid var(--quaternary);
+      border-bottom: 1px solid rgba(150,150,150,0.2);
       background: var(--background);
 
       li {
@@ -31,20 +31,21 @@ html, body {
 
         a {
           border-bottom: none;
-          color: var(--tertiary);
-          font-size: 18px;
-          line-height: 24px;
+          color: var(--secondary);
+          font-size: 16px;
+          line-height: 22px;
         }
         a:hover {
-          color: var(--color-2)
+          color: var(--color-1)
         }
-        .active {
-          color: var(--secondary);
+        .active,
+        .active:hover {
+          color: var(--tertiary);
         }
       }
       li:first-child {
         padding-left: 0;
-        flex-grow: 2;
+        // flex-grow: 2;
       }
       li:last-child {
         padding-right: 0;
@@ -147,18 +148,23 @@ img.profilepic {
 
 ul.navigation {
   list-style: none;
-  padding: 10px;
+  padding: 0;
   margin-top: 80px;
-  background: var(--elevated-bg);
+  // background: var(--elevated-bg);
+  border: 1px solid var(--quaternary);
   border-radius: 6px;
 
   li {
-    // border-bottom: 1px solid var(--tertiary);
+    border-bottom: 1px solid var(--quaternary);
     padding: 10px 0;
     margin: 0;
+
     span {
-      margin: 0 5px 0 10px;
+      padding: 0 10px 0 15px;
     }
+  }
+  li:last-child  {
+    border-bottom: none;
   }
 }
 
@@ -280,22 +286,22 @@ ul.navigation {
   }
 
   .flickity-prev-next-button {
-    background: var(--elevated-bg);
+    background: rgba(150,150,150,0.15);
     color: var(--primary);
     width: 44px;
     height: 44px;
   }
   .flickity-prev-next-button:hover {
-    background: var(--elevated-bg);
+    background: rgba(150,150,150,0.15);
     color: var(--color-2)
   }
   .flickity-prev-next-button.previous {
     left: 10px;
-    top: calc(50% - 60px);
+    top: calc(50% - 56px);
   }
   .flickity-prev-next-button.next {
     right: 10px;
-    top: calc(50% - 60px);
+    top: calc(50% - 56px);
   }
 }
 
