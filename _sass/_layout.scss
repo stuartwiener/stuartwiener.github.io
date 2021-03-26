@@ -22,7 +22,7 @@ html, body {
       display: flex;
       width: 100%;
       
-      border-bottom: 1px solid rgba(150,150,150,0.2);
+      border-bottom: 1px solid var(--secondary);
       background: var(--background);
 
       li {
@@ -31,16 +31,18 @@ html, body {
 
         a {
           border-bottom: none;
-          color: var(--secondary);
+          color: var(--primary);
           font-size: 16px;
           line-height: 22px;
+          font-weight: 700;
         }
         a:hover {
           color: var(--color-1)
         }
         .active,
         .active:hover {
-          color: var(--tertiary);
+          color: var(--primary);
+          font-weight: 400;
         }
       }
       li:first-child {
@@ -150,17 +152,16 @@ ul.navigation {
   list-style: none;
   padding: 0;
   margin-top: 80px;
-  // background: var(--elevated-bg);
-  border: 1px solid var(--quaternary);
+  border: 1px solid var(--secondary);
   border-radius: 6px;
 
   li {
-    border-bottom: 1px solid var(--quaternary);
-    padding: 10px 0;
+    border-bottom: 1px solid var(--secondary);
+    padding: 12px;
     margin: 0;
 
     span {
-      padding: 0 10px 0 15px;
+      padding: 0 7px 0 3px;
     }
   }
   li:last-child  {
@@ -188,7 +189,7 @@ ul.navigation {
     position: relative;
     display: flex;
     
-    margin-top: 100px;
+    margin-top: 80px;
     
     h2 {
       margin-top: 7px;
@@ -286,13 +287,13 @@ ul.navigation {
   }
 
   .flickity-prev-next-button {
-    background: rgba(150,150,150,0.15);
-    color: var(--primary);
+    background: var(--color-3);
+    color: var(--color-1);
     width: 44px;
     height: 44px;
   }
   .flickity-prev-next-button:hover {
-    background: rgba(150,150,150,0.15);
+    background: var(--color-3);
     color: var(--color-2)
   }
   .flickity-prev-next-button.previous {

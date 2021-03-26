@@ -5,13 +5,12 @@
 
 :root {
   --background: #FFFFFF;
-  --elevated-bg: #F7F7F7;
-  --primary: #1B1B1B;
-  --secondary: #484542;
+  --primary: #000000;
+  --secondary: #1A1A1A;
   --tertiary: #A4A19D;
-  --quaternary: #E9E3DD;
-  --color-1: #FF7A00;
-  --color-2: #FF9933;
+  --color-1: #E52B50;
+  --color-2: #C40233;
+  --color-3: rgba(229,43,80,0.08);
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
