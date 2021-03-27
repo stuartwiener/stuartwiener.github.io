@@ -31,7 +31,7 @@
                         <div class="gallery-item-image" style="background-image: url('{{ site.url }}/images/{{ item.thumbnail }}');"></div>
                         <div class="gallery-item-content">
                             <h2 class="subheading">{{ item.title }}</h2>
-                            <p class="subtext">{{ item.description }}</p>
+                            {{ item.content }}
                         </div>
                     </div>
                     {% endfor %}
