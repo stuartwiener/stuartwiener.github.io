@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        {% include head.html %}
+
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    </head>
+
+    <body>
+
+        <div class="site">
+
+            <div class="site-header site-header--wide">
+                <ul>
+                    <li><a class="{% if page.name == 'index.html' %}active{% endif %}" href="{{ site.url }}">Stuart Wiener</a></li>
+                    <li><a class="{% if page.name == 'work.html' %}active{% endif %}" href="{% link work.html %}">Recent Work</a></li>
+                </ul>
+            </div>
+
+            <div class="site-gallery">
+
+                {{ content }}
+
+                <div class="gallery js-flickity" 
+                    data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "arrowShape": "M45 16 51 23 29 45 89 45 89 55 29 55 51 77 45 84 11 50z" }'>
+                    {% for item in site.work %}
+                    <div class="gallery-item">
+                        <div class="gallery-item-image" style="background-image: url('{{ site.url }}/images/{{ item.thumbnail }}');"></div>
+                        <div class="gallery-item-content">
+                            <h2 class="subheading">{{ item.title }}</h2>
+                            {{ item.content }}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+            </div>
+
+        </div>
+
+        {% include footer.html %}
+
+    </body>
+
+</html>

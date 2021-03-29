@@ -9,6 +9,12 @@
 
     <div class="site">
 
+        <div class="site-header">
+            <ul>
+                <li><a class="{% if page.name == 'index.html' %}active{% endif %}" href="{{ site.url }}">Stuart Wiener</a></li>
+            </ul>
+        </div>
+
       <div class="site-content">
         
         {{ content }}
