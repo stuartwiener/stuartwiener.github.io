@@ -1,19 +1,16 @@
 html, body {
-  background: var(--background);
-  // background-image: linear-gradient(#FAF0E6, #fff);
+  background: var(--primary);
 }
 
 .site {
   width: 100%;
   position: relative;
+  background: var(--background);
 
   .site-header {
     padding:  0 20px;
     box-sizing: border-box;
     max-width: 840px;
-    // position: fixed;
-    // z-index: 999;
-    // width: 100%
 
     ul {
       padding: 0;
@@ -114,6 +111,14 @@ html, body {
       width: 50%;
       padding-right: 0;
     }
+    .site-banner {
+      width: calc(50% - 80px);
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: linear-gradient(var(--color-1), #FF4F00);
+    }
   }
 }
 
@@ -131,6 +136,9 @@ html, body {
     }
     .site-gallery {
       padding: 80px 0;
+    }
+    .site-banner {
+      width: calc(50% - 160px);
     }
   }
 }
@@ -160,11 +168,15 @@ ul.navigation {
 
   li {
     border-bottom: 1px solid var(--secondary);
-    padding: 12px;
+    padding: 12px 12px 12px 42px;
     margin: 0;
+    position: relative;
 
     span {
-      padding: 0 7px 0 3px;
+      // padding: 0 7px 0 3px;
+      position: absolute;
+      top: 14px;
+      left: 12px;
     }
   }
   li:last-child  {
