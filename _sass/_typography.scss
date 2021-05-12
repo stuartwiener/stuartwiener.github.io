@@ -31,9 +31,10 @@ html {
 }
 
 a {
-  color: var(--color-1);
+  color: var(--primary);
   text-decoration: none;
-  border-bottom: 1px solid var(--color-1);
+  border-bottom: 1px solid var(--primary);
+  // background: var(--color-4);
   cursor: pointer;
 }
 a:hover {

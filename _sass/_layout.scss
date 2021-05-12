@@ -163,11 +163,11 @@ ul.navigation {
   list-style: none;
   padding: 0;
   margin-top: 80px;
-  border: 1px solid var(--secondary);
+  border: 1px solid var(--tertiary);
   border-radius: 12px;
 
   li {
-    border-bottom: 1px solid var(--secondary);
+    border-bottom: 1px solid var(--tertiary);
     padding: 12px 12px 12px 44px;
     margin: 0;
     position: relative;
@@ -302,14 +302,14 @@ ul.navigation {
   }
 
   .flickity-prev-next-button {
-    background: var(--color-3);
-    color: var(--color-1);
+    background: var(--secondary);
+    color: var(--background);
     width: 44px;
     height: 44px;
   }
   .flickity-prev-next-button:hover {
-    background: var(--color-3);
-    color: var(--color-2)
+    background: var(--color-2);
+    color: var(--background);
   }
   .flickity-prev-next-button.previous {
     left: 10px;
