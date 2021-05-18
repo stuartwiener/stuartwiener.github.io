@@ -53,7 +53,7 @@ html, body {
   }
 
   .site-content {
-    padding:  20px 20px 160px 20px;
+    padding:  20px 30px 160px 20px;
     box-sizing: border-box;
     max-width: 840px;
   }
@@ -63,6 +63,15 @@ html, body {
   .site-gallery {
     padding:  40px 0;
     box-sizing: border-box;
+  }
+
+  .site-banner {
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(var(--color-1), var(--color-4));
   }
 }
 
@@ -76,10 +85,13 @@ html, body {
       max-width: none;
     }
     .site-content {
-      padding: 40px 40px 160px 40px;
+      padding: 40px 60px 160px 40px;
     }
     .site-gallery {
       padding: 80px 0;
+    }
+    .site-banner {
+      width: 20px;
     }
   }
 }
@@ -94,6 +106,10 @@ html, body {
     }
     .site-gallery {
       padding: 80px 0;
+    }
+    .site-banner {
+      width: auto;
+      left: 840px;
     }
   }
 }
@@ -113,11 +129,7 @@ html, body {
     }
     .site-banner {
       width: calc(50% - 80px);
-      height: 100%;
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-image: linear-gradient(var(--color-1), var(--color-4));
+      left: auto;
     }
   }
 }
