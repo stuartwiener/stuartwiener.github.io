@@ -1,4 +1,4 @@
-function drawSpirograph(context, cx, cy, radius1, radius2, ratio) {
+function drawSpirograph(context, cx, cy, radius1, radius2, ratio, colour) {
     var x, y, theta;
   
     // Move to starting point (theta = 0)
@@ -6,14 +6,14 @@ function drawSpirograph(context, cx, cy, radius1, radius2, ratio) {
     context.moveTo(cx + radius1 + radius2, cy);
   
     // Draw segments from theta = 0 to theta = 2PI
-    for (theta = 0; theta <= Math.PI * 2; theta += 0.01) {
+    for (theta = 0; theta <= Math.PI * 2; theta += 0.0025) {
       x = cx + radius1 * Math.cos(theta) + radius2 * Math.cos(theta * ratio);
       y = cy + radius1 * Math.sin(theta) + radius2 * Math.sin(theta * ratio);
       context.lineTo(x, y);
     }
   
     // Apply stroke
-    context.strokeStyle = "#febaad";
+    context.strokeStyle = colour;
     context.lineWidth = 1;
     context.stroke();
 }
@@ -25,13 +25,19 @@ var context = canvas.getContext('2d');
 // Set the wobbles you want
 var radius1wobble = window.innerHeight / 12;
 var radius2wobble = window.innerHeight / 6;
-var speed = 0.35;
+var speed = 0.1;
 
 // Temp variables used by loop. Don't change these they will be overridden.
-var radius1wobbletemp = Math.random() * radius1wobble;
-var radius1wobbledirection = 1;
-var radius2wobbletemp = Math.random() * radius2wobble;
-var radius2wobbledirection = 1;
+var radius1wobbletemp = 0;
+var radius2wobbletemp = 0;
+var frame = 0;
+var cxoffset = 0;
+var cyoffset = 0;
+
+window.onmousemove = function(e) {
+    cxoffset = Math.cos((e.clientX / window.innerWidth) * Math.PI);
+    cyoffset = Math.cos((e.clientY / window.innerHeight) * Math.PI);
+}
 
 // Draw spirograph
 function resizeCanvas() {
@@ -40,21 +46,16 @@ function resizeCanvas() {
 
     context.clearRect(0, 0, canvas.width, canvas.height);
 
-    if(radius1wobbletemp < radius1wobble && radius1wobbletemp >= -1 * radius1wobble) {
-        radius1wobbletemp += radius1wobbledirection * speed;
-    } else {
-        radius1wobbledirection = -1 * radius1wobbledirection;
-        radius1wobbletemp += radius1wobbledirection * speed;
+    radius1wobbletemp = Math.sin(Math.PI*2*frame/60) * radius1wobble;
+    radius2wobbletemp = (Math.sin(Math.PI*2*frame/105) + 1) * radius2wobble;
+    frame += speed;
+
+    // Prevent the math getting stupid. Should be a little over 10 minutes.
+    if(frame > 50000) {
+        frame = 0;
     }
 
-    if(radius2wobbletemp < radius2wobble && radius2wobbletemp >= 0) {
-        radius2wobbletemp += radius2wobbledirection * speed;
-    } else {
-        radius2wobbledirection = -1 * radius2wobbledirection;
-        radius2wobbletemp += radius2wobbledirection * speed;
-    }
-
-    drawSpirograph(context, canvas.width / 2, canvas.height / 2, canvas.height / 4 - radius1wobbletemp, canvas.height / 8 + radius2wobbletemp, 12);
-    drawSpirograph(context, canvas.width / 2, canvas.height / 2, canvas.height / 3 + radius1wobbletemp, canvas.height / 7 + radius2wobbletemp, 15);
+    drawSpirograph(context, canvas.width / 2 + cxoffset * -20, canvas.height / 2 + cyoffset * -30, canvas.height / 4 - radius1wobbletemp, canvas.height / 8 + radius2wobbletemp, 6, "#FFE279");
+    drawSpirograph(context, canvas.width / 2 + cxoffset * -50, canvas.height / 2 + cyoffset * -50, canvas.height / 4 + radius1wobbletemp, canvas.height / 8 + radius2wobbletemp, 9, "#FFE279");
 }
-setInterval(resizeCanvas, 15);
+setInterval(resizeCanvas, 16);
