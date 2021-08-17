@@ -13,7 +13,7 @@ function drawSpirograph(context, cx, cy, radius1, radius2, ratio) {
     }
   
     // Apply stroke
-    context.strokeStyle = "#FFE279";
+    context.strokeStyle = "#febaad";
     context.lineWidth = 1;
     context.stroke();
 }
