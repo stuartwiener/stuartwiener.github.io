@@ -4,8 +4,8 @@
 
 html {
   font-family: 'Inter', sans-serif;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 30px;
   font-weight: 400;
   letter-spacing: -0.005em;
   color: var(--primary);
@@ -40,6 +40,7 @@ a {
 a:hover {
   color: var(--color-2);
   border-bottom: 1px solid var(--color-2);
+  
 }
 
 em  {
@@ -50,10 +51,10 @@ strong {
 }
 
 p {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 30px;
   letter-spacing: -0.005em;
-  margin: 12px 0;
+  margin: 18px 0;
 }
 img {
   max-width: 100%;
@@ -63,11 +64,11 @@ img {
   border-radius: 6px;
 }
 ol, ul {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 30px;
   letter-spacing: -0.005em;
   padding: 0 0 0 18px;
-  margin: 12px 0;
+  margin: 18px 0;
 
   li {
     margin: 0;
@@ -77,25 +78,25 @@ ol, ul {
 hr {
   border: none;
   border-top: 1px solid var(--secondary);
-  margin: 12px 0 12px;
+  margin: 18px 0;
   padding: 0;
   width: 100%;
 }
 
 h1, h2, h3, h4 {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 30px;
   letter-spacing: -0.005em;
-  margin: 12px 0;
+  margin: 18px 0;
   font-weight: 400;
 }
 
 blockquote {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 30px;
   letter-spacing: -0.01em;
   padding: 0;
-  margin: 12px 0;
+  margin: 18px 0;
 }
 
 .profilepic {
