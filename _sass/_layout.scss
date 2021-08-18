@@ -3,8 +3,7 @@ html {
   animation: bgcolorrotation 25s linear infinite alternate;
 }
 @keyframes bgcolorrotation {
-  // 0% { background-color: var(--color-1); }
-  0% { background-color: #A2C8B1; }
+  0% { background-color: #ACDAB1; }
   100% { background-color: #FFE279; }
 }
 
