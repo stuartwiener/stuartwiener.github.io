@@ -8,7 +8,7 @@ html {
   line-height: 24px;
   font-weight: 400;
   letter-spacing: -0.005em;
-  color: var(--primary);
+  color: #000000;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,15 +20,14 @@ html {
 }
 
 a {
-  color: var(--primary);
+  color: #000000;
   text-decoration: none;
-  border-bottom: 1px solid var(--primary);
-  // background: var(--color-4);
+  border-bottom: 1px solid #000000;
   cursor: pointer;
 }
 a:hover {
-  color: var(--color-2);
-  border-bottom: 1px solid var(--color-2);
+  color: #177643;
+  border-bottom: 1px solid #177643;
   
 }
 
@@ -66,7 +65,7 @@ ol, ul {
 
 hr {
   border: none;
-  border-top: 1px solid var(--secondary);
+  border-top: 1px solid #000000;
   margin: 18px 0;
   padding: 0;
   width: 100%;

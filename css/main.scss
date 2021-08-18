@@ -3,17 +3,6 @@
 ---
 @charset "utf-8";
 
-:root {
-  --background: #FFFFFF;
-  --primary: #000000;
-  --secondary: #1A1A1A;
-  --tertiary: #dedede;
-  --color-1: #D35B40;
-  --color-2: #1B5535;
-  --color-3: #efddd6;
-  --color-4: #e6f6fa;
-}
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
   "normalize",
