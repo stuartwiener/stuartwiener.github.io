@@ -55,7 +55,7 @@ function resizeCanvas() {
         frame = 0;
     }
 
-    drawSpirograph(context, canvas.width / 2 - cxoffset * 15, canvas.height / 2 - cyoffset * 15, canvas.height / 4 - radius1wobbletemp, canvas.height / 8 + radius2wobbletemp, 7, "#FFE279");
-    drawSpirograph(context, canvas.width / 2 - cxoffset * 30, canvas.height / 2 - cyoffset * 30, canvas.height / 4 + radius1wobbletemp, canvas.height / 8 + radius2wobbletemp, 10, "#FFE279");
+    drawSpirograph(context, canvas.width / 2 - cxoffset * 15, canvas.height / 2 - cyoffset * 15, canvas.height / 4 - radius1wobbletemp, canvas.height / 8 + radius2wobbletemp, 7, "#88FFBF");
+    drawSpirograph(context, canvas.width / 2 - cxoffset * 30, canvas.height / 2 - cyoffset * 30, canvas.height / 4 + radius1wobbletemp, canvas.height / 8 + radius2wobbletemp, 10, "#88FFBF");
 }
 setInterval(resizeCanvas, 16);
