@@ -19,17 +19,6 @@ html {
   display: none;
 }
 
-::-moz-selection {
-  color: var(--background);
-  background: var(--color-1);
-  text-shadow: none;
-}
-::selection {
-  color: var(--background);
-  background: var(--color-1);
-  text-shadow: none;
-}
-
 a {
   color: var(--primary);
   text-decoration: none;
