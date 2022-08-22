@@ -50,7 +50,7 @@ function resizeCanvas() {
     radius2wobbletemp = (Math.sin(Math.PI*2*frame/105) + 1) * radius2wobble;
     frame += speed;
 
-    // Prevent the math getting stupid. Should be a little over 10 minutes.
+    // Prevent the math getting stupid. Should be a little over 100 minutes.
     if(frame > 50000) {
         frame = 0;
     }
