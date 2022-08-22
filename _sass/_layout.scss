@@ -1,10 +1,5 @@
 html {
   background: #FAFAFA;
-  // animation: bgcolorrotation 25s linear infinite alternate;
-}
-@keyframes bgcolorrotation {
-  0% { background-color: #ACDAB1; }
-  100% { background-color: #FFE279; }
 }
 
 .site {
@@ -53,12 +48,15 @@ html {
       position: fixed;
       top: 0; 
       left: 0;
-      width: 50%;
+      width: 33.333%;
     }
     .site-content {
-      margin-left: 50%;
-      width: 50%;
-      
+      margin-left: 33.333%;
+      width: 66.666%;
+
+      p {
+        width: 50%;
+      }
     }
   }
 }
@@ -72,7 +70,11 @@ html {
     }
     .site-content {
       margin-left: 25%;
-      width: 25%;
+      width: 75%;
+
+      p {
+        width: 33.333%;
+      }
       
     }
   }

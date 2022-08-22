@@ -11,8 +11,6 @@ description: Design leader living and working in Johannesburg, South Africa.
 email: hello@stuartwiener.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://stuartwiener.com" # the base hostname & protocol for your site
-collections: 
-  - work
 
 # Build settings
 markdown: kramdown
