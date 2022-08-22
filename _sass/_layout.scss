@@ -51,17 +51,18 @@ html {
       width: 33.333%;
     }
     .site-content {
+      padding-right: 32px;
       margin-left: 33.333%;
       width: 66.666%;
 
       p {
-        width: 50%;
+        width: 100%;
       }
     }
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .site {
     display: flex;
 
@@ -73,7 +74,7 @@ html {
       width: 75%;
 
       p {
-        width: 33.333%;
+        width: 50%;
       }
       
     }
