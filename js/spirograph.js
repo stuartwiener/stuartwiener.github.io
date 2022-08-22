@@ -31,13 +31,13 @@ var speed = 0.1;
 var radius1wobbletemp = 0;
 var radius2wobbletemp = 0;
 var frame = 0;
-var cxoffset = 0;
-var cyoffset = 0;
+// var cxoffset = 0;
+// var cyoffset = 0;
 
-window.onmousemove = function(e) {
-    cxoffset = Math.cos((e.clientX / window.innerWidth) * Math.PI);
-    cyoffset = Math.cos((e.clientY / window.innerHeight) * Math.PI);
-}
+// window.onmousemove = function(e) {
+//     cxoffset = Math.cos((e.clientX / window.innerWidth) * Math.PI);
+//     cyoffset = Math.cos((e.clientY / window.innerHeight) * Math.PI);
+// }
 
 // Draw spirograph
 function resizeCanvas() {
@@ -55,7 +55,7 @@ function resizeCanvas() {
         frame = 0;
     }
 
-    drawSpirograph(context, canvas.width / 2 - cxoffset * 15, canvas.height / 2 - cyoffset * 15, canvas.height / 4 - radius1wobbletemp, canvas.height / 8 + radius2wobbletemp, 7, "#80FFBA");
-    drawSpirograph(context, canvas.width / 2 - cxoffset * 30, canvas.height / 2 - cyoffset * 30, canvas.height / 4 + radius1wobbletemp, canvas.height / 8 + radius2wobbletemp, 10, "#80FFBA");
+    drawSpirograph(context, canvas.width / 2, canvas.height / 2, canvas.height / 4 - radius1wobbletemp, canvas.height / 8 + radius2wobbletemp, 7, "#80FFBA");
+    drawSpirograph(context, canvas.width / 2, canvas.height / 2, canvas.height / 4 + radius1wobbletemp, canvas.height / 8 + radius2wobbletemp, 10, "#80FFBA");
 }
 setInterval(resizeCanvas, 16);
