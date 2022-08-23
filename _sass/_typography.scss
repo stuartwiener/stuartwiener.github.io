@@ -29,9 +29,12 @@ a {
   cursor: pointer;
 }
 a:hover {
-  color: #177643;
-  border-bottom: 1px solid #177643;
-  
+  color: #888888;
+  border-bottom: 1px solid #888888;
+}
+a:active {
+  color: #000000;
+  border-bottom: 1px solid #000000;
 }
 
 em  {
