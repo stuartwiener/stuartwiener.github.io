@@ -29,6 +29,20 @@ html {
 
     box-sizing: border-box;
     padding: 18px;
+
+    .bookshelf {
+
+      .book {
+        width: 360px;
+        display: inline-block;
+        text-align: center;
+
+        img {
+          width: auto;
+          height: 320px;
+        }
+      }
+    }
   }
 
   .site-background {
@@ -52,7 +66,7 @@ html {
       width: 33.333%;
     }
     .site-content {
-      padding-right: 32px;
+      padding-right: 36px;
       margin-left: 33.333%;
       width: 66.666%;
 
