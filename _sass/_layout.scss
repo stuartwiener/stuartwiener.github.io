@@ -6,6 +6,7 @@ html {
   position: relative;
   background: #FAFAFA;
   min-height: 100vh;
+  margin-bottom: 72px;
 
   .site-header {
     position: relative;
@@ -25,7 +26,6 @@ html {
 
     box-sizing: border-box;
     padding: 0 19px;
-    margin-bottom: 72px;
   }
 }
 
@@ -45,10 +45,10 @@ html {
 @media (min-width: 720px) {
   .site {
     width: 50%;
+    margin-bottom: 0;
 
     .site-content {
       padding: 0 38px;
-      margin-bottom: 0;
 
       p {
         max-width: 360px;
