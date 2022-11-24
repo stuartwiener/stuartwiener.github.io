@@ -12,7 +12,7 @@ html {
     z-index: 1;
 
     box-sizing: border-box;
-    padding: 0 0 19px;
+    padding: 0;
 
     a {
       border-bottom: none;
@@ -24,7 +24,8 @@ html {
     z-index: 1;
 
     box-sizing: border-box;
-    padding: 19px;
+    padding: 0 19px;
+    margin-bottom: 72px;
   }
 }
 
@@ -46,6 +47,9 @@ html {
     width: 50%;
 
     .site-content {
+      padding: 0 38px;
+      margin-bottom: 0;
+
       p {
         max-width: 360px;
       }
