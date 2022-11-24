@@ -4,23 +4,15 @@ html {
 
 .site {
   position: relative;
+  background: #FAFAFA;
+  min-height: 100vh;
 
   .site-header {
     position: relative;
     z-index: 1;
 
     box-sizing: border-box;
-    padding: 18px;
-
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      
-      li {
-        margin: 0;
-      }
-    }
+    padding: 19px 0;
   }
 
   .site-content {
@@ -28,56 +20,31 @@ html {
     z-index: 1;
 
     box-sizing: border-box;
-    padding: 18px;
+    padding: 19px 0;
   }
+}
 
-  .site-background {
-    position: fixed;
-    top:0;
-    left: 0;
-    z-index: -1;
+.site-background {
+  position: fixed;
+  top:0;
+  left: 0;
+  background: #E1E0DD;
 
-    #maincanvas {
-      
-    }
+  z-index: -1;
+
+  #maincanvas {
+    
   }
 }
 
 @media (min-width: 720px) {
   .site {
-    .site-header {
-      position: fixed;
-      top: 0; 
-      left: 0;
-      width: 33.333%;
-    }
+    width: 50%;
+
     .site-content {
-      padding-right: 36px;
-      margin-left: 33.333%;
-      width: 66.666%;
-
       p {
-        width: 100%;
+        max-width: 360px;
       }
-    }
-  }
-}
-
-@media (min-width: 960px) {
-  .site {
-    display: flex;
-
-    .site-header {
-      width: 25%;
-    }
-    .site-content {
-      margin-left: 25%;
-      width: 75%;
-
-      p {
-        width: 50%;
-      }
-      
     }
   }
 }

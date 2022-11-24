@@ -11,13 +11,7 @@
     <div class="site">
 
       <div class="site-header">
-        <ul class="navigation">
-          <li><a href="{% link index.html %}">About</a></li>
-          <!-- <li><a href="{% link work.html %}">Work</a></li> -->
-          <li><a onclick="window.location.href='mailto:hello'+'@'+'stuartwiener.com';">Email</a></li>
-          <li><a href="https://twitter.com/stuartwiener">Twitter</a></li>
-        </ul>
-
+        <a href="{% link index.html %}"><img src="{{ site.url }}/images/sw-monogram.svg" alt="Stuart Wiener monogram"></a>
       </div>
 
       <div class="site-content">
@@ -25,14 +19,14 @@
         {{ content }}
 
       </div>
-
-      {% if page.show_background %}
-      <div class="site-background">
-        <canvas id="maincanvas"></canvas>
-      </div>
-      {% endif %}
       
     </div>
+
+    {% if page.show_background %}
+    <div class="site-background">
+      <canvas id="maincanvas"></canvas>
+    </div>
+    {% endif %}
 
     {% include footer.html %}
 

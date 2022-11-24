@@ -4,11 +4,11 @@
 
 html {
   font-family: 'Inter', sans-serif;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 21px;
+  line-height: 28px;
   font-weight: 400;
   letter-spacing: -0.005em;
-  color: #000000;
+  color: #353943;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -19,22 +19,22 @@ html {
   display: none;
 }
 .space {
-  margin-bottom: 96px;
+  margin-bottom: 76px;
 }
 
 a {
-  color: #000000;
+  color: #353943;
   text-decoration: none;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #353943;
   cursor: pointer;
 }
 a:hover {
-  color: #555555;
-  border-bottom: 1px solid #555555;
+  color: #000000;
+  border-bottom: 1px solid #000000;
 }
 a:active {
-  color: #444444;
-  border-bottom: 1px solid #444444;
+  color: #E1E0DD;
+  border-bottom: 1px solid #E1E0DD;
 }
 
 em  {
@@ -44,16 +44,16 @@ strong {
   font-weight: 700;
 }
 .secondary {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 24px;
-  color: #888888;
+  color: #E1E0DD;
 }
 
 p {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 21px;
+  line-height: 28px;
   letter-spacing: -0.005em;
-  margin: 18px 0;
+  margin: 19px 0;
 }
 img {
   max-width: 100%;
@@ -63,11 +63,11 @@ img {
   border-radius: 6px;
 }
 ol, ul {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 21px;
+  line-height: 28px;
   letter-spacing: -0.005em;
-  padding: 0 0 0 18px;
-  margin: 18px 0;
+  padding: 0 0 0 19px;
+  margin: 19px 0;
 
   li {
     margin: 0;
@@ -76,26 +76,26 @@ ol, ul {
 
 hr {
   border: none;
-  border-top: 1px solid #000000;
-  margin: 18px 0;
+  border-top: 1px solid #353943;
+  margin: 19px 0;
   padding: 0;
   width: 100%;
 }
 
 h1, h2, h3, h4 {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 21px;
+  line-height: 28px;
   letter-spacing: -0.005em;
-  margin: 18px 0;
+  margin: 19px 0;
   font-weight: 700;
 }
 
 blockquote {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 21px;
+  line-height: 28px;
   letter-spacing: -0.01em;
   padding: 0;
-  margin: 18px 0;
+  margin: 19px 0;
 }
 
 .profilepic {
