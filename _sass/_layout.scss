@@ -25,20 +25,20 @@ html {
     box-sizing: border-box;
     padding: 0 19px;
   }
-}
 
-.site-background {
-  width: 100vw;
-  height: 70vw;
-
-  background-color: #353943;
-  background-image: url("https://stuartwiener.com/images/stuart_wiener_large_2023.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-
-  z-index: -1;
+  .site-background {
+    width: 100vw;
+    height: 70vw;
+  
+    background-color: #353943;
+    background-image: url("https://stuartwiener.com/images/stuart_wiener_large_2023.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  
+    z-index: -1;
+  }
 }
 
 @media (min-width: 720px) {
@@ -52,12 +52,13 @@ html {
         max-width: 360px;
       }
     }
-  }
-  .site-background {
-    position: fixed;
-    top:0;
-    left: 50%;
-    width: 50vw;
-    height: 100vh;;
+
+    .site-background {
+      position: fixed;
+      top:0;
+      left: 50%;
+      width: 50vw;
+      height: 100vh;;
+    }
   }
 }
