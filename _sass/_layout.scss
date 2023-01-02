@@ -30,10 +30,15 @@ html {
 }
 
 .site-background {
-  position: fixed;
-  top:0;
-  left: 0;
-  background: #353943 url("https://stuartwiener.com/images/stuart_wiener_large_2023.jpg") no-repeat fixed cover;
+  width: 100vw;
+  height: 70vw;
+
+  background-color: #353943;
+  background-image: url("https://stuartwiener.com/images/stuart_wiener_large_2023.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 
   z-index: -1;
 }
@@ -50,5 +55,12 @@ html {
         max-width: 360px;
       }
     }
+  }
+  .site-background {
+    position: fixed;
+    top:0;
+    left: 50%;
+    width: 50vw;
+    height: 100vh;;
   }
 }
