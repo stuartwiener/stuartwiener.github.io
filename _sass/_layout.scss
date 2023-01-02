@@ -33,13 +33,9 @@ html {
   position: fixed;
   top:0;
   left: 0;
-  background: #E1E0DD;
+  background: #353943 url("https://stuartwiener.com/images/stuart_wiener_large_2023.jpg") no-repeat fixed cover;
 
   z-index: -1;
-
-  #maincanvas {
-    
-  }
 }
 
 @media (min-width: 720px) {
