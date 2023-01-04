@@ -52,6 +52,13 @@ html {
         max-width: 360px;
       }
     }
+    .site-content.full-width {
+      width: auto;
+      
+      p {
+        max-width: 640px;
+      }
+    }
 
     .site-background {
       position: fixed;
