@@ -11,7 +11,7 @@ html {
     z-index: 1;
 
     box-sizing: border-box;
-    padding: 19px 15px 0;
+    padding: 19px 6px 0;
 
     a {
       border-bottom: none;
@@ -43,6 +43,10 @@ html {
 
 @media (min-width: 720px) {
   .site {
+
+    .site-header {
+      padding: 19px 15px 0;
+    }
 
     .site-content {
       padding: 0 38px;
